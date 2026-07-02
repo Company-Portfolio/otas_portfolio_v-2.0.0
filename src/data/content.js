@@ -27,7 +27,7 @@ export const content = {
     items: [
       {
         id: 1,
-        title: "Business Website For Brand Trust",
+        title: "AI Agents for Automation",
         description:
           "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Website များ",
         icon: "globe",
@@ -48,7 +48,7 @@ export const content = {
       },
       {
         id: 4,
-        title: "AI Agents for Automation",
+        title: "Business Email for Brand Identity",
         description:
           "လုပ်ငန်းတွေကို အလိုအလျောက် လုပ်ဆောင်ပေးနိုင်တဲ့ AI Agents များ",
         icon: "bot",
@@ -73,7 +73,7 @@ export const content = {
         logo: "/images/logo-intl-focus.png",
         description:
           "လုပ်ငန်းတာဝန်များကို စနစ်တကျ လုပ်ဆောင် စီမံခန့်ခွဲ့ပေးပြီး အချက်လက်များသိမ်းဆည်းပေးသော စိမံခန်ခွဲ့ရေး Software",
-        image: "/images/casetwo.png",
+        image: "/images/casethree.png",
         accentColor: "#N2E8DZ",
       },
       {
@@ -82,7 +82,7 @@ export const content = {
         logo: "/images/logo-livecode.png",
         description:
           "Live Sale မှ အော်ဒါများကို အလိုလျောက်‌ကောက်ခံပေးပြီး Live Saleတစ်ခုလုံးကို စိီမံခန့်ခွဲပေးတဲ့ Automation Software",
-        image: "/images/casethree.png",
+        image: "/images/casefour.png",
         accentColor: "#UFRJJQ",
       },
       {
@@ -91,7 +91,7 @@ export const content = {
         logo: "/images/logo-okgroup.png",
         description:
           "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Portfolio နှင့် Dash Board",
-        image: "/images/casefour.png",
+        image: "/images/casetwo.png",
         accentColor: "#O3NDGR",
       },
     ],
@@ -102,19 +102,20 @@ export const content = {
       {
         id: 1,
         title:
-          "ဆိုင်ရှင်တွေကို စိတ်အေးရအောင် စျေးကူရောင်းပေးမဲ့ Online ဆိုင်ခွဲ Auto Shop",
+
+          "လုပ်ငန်းရှင်တွေကို စျေးကူရောင်းပေးမဲ့ အိုတက်စ်ရဲ့ အေအိုင် အရောင်း ဝန်ထမ်း",
         cta1: "Auto Shop စမ်းသုံးကြည့်မယ်",
         cta2: "ဆက်သွယ်ဆွေးနွေးမယ်",
-        image: "/images/cta-autoshop.svg",
+        image: "/images/Group-1.png",
         variant: "primary",
       },
       {
         id: 2,
         title:
-          "လုပ်ငန်းရှင်တွေကို စျေးကူရောင်းပေးမဲ့ အိုတက်စ်ရဲ့ အေအိုင် အရောင်း ဝန်ထမ်း",
+          "ဆိုင်ရှင်တွေကို စိတ်အေးရမဲ့ Online ဆိုင်ခွဲ Auto Shop",
         cta1: "အေအိုင်အေးဂျင့် စမ်းသုံးကြည့်မယ်",
         cta2: "ဆက်သွယ်ဆွေးနွေးမယ်",
-        image: "/images/cta-aiagent.svg",
+        image: "/images/image-6.png",
         variant: "secondary",
       },
     ],
@@ -127,44 +128,46 @@ export const content = {
       {
         id: 2,
         name: "Suzuki Mega 6 Car showroom",
-        logo: "/images/client-suzuki.svg",
+        logo: "/images/mega.svg",
       },
-      { id: 3, name: "Live Code Myanmar", logo: "/images/client-livecode.svg" },
+      { id: 3, name: "Live Code Myanmar", logo: "/images/live-code-logo.svg" },
       {
         id: 4,
         name: "International Focus",
-        logo: "/images/client-intlfocus.svg",
+        logo: "/images/Rectangle.png",
       },
-      { id: 5, name: "Funglish Max", logo: "/images/client-funglish.svg" },
+      { id: 5, name: "Funglish Max", logo: "/images/funglish.png" },
       {
         id: 6,
         name: "OK Group of Compaines",
-        logo: "/images/client-okgroup.svg",
+        logo: "/images/ok.png",
       },
       {
         id: 7,
         name: "Digital Saw Marketing Agency",
-        logo: "/images/client-digitalsaw.svg",
+        logo: "/images/digital-saw.png",
       },
       {
         id: 8,
         name: "Medical Education Guild",
-        logo: "/images/client-medical.svg",
+        logo: "/images/client-medical.png",
       },
-      { id: 9, name: "Drinking Mode", logo: "/images/client-drinkingmode.svg" },
+      { id: 9, name: "Drinking Mode", logo: "/images/client-drinkingmode.png" },
       {
         id: 10,
         name: "General Impex",
-        logo: "/images/client-generalimpex.svg",
+        logo: "/images/client-generalimpex.png",
       },
     ],
   },
   faq: {
+    title: "မေးခွန်းနဲ့ အဖြေများ",
+    subtitle: "အိုတက်ခ်ကို လုပ်ငန်းရှင်တွေအမေးများသော မေးခွန်းများ",
     tabs: [
-      { id: "website", label: "Business Website" },
-      { id: "software", label: "Customize Software" },
-      { id: "email", label: "Business Email" },
-      { id: "ai", label: "AI Agent" },
+      { id: "website", label: "Business Website ဆိုင်ရာ" },
+      { id: "software", label: "Customize Software ဆိုင်ရာ" },
+      { id: "email", label: "Business Email ဆိုင်ရာ" },
+      { id: "ai", label: "AI Agent ဆိုင်ရာ" },
     ],
     items: {
       website: [
@@ -226,6 +229,44 @@ export const content = {
       ],
     },
   },
+
+
+  success: {
+    badge: "အောင်မြင်မှု မှတ်တမ်းများ",
+    subTitle: "အိုတက်စ် အနေနဲ့ လုပ်ငန်းရှင်တွေရဲ့ အခက်အခဲတွေကို ဆွေးနွေးတိုင်ပင်အဖြေရှာပြီး အကောင်းဆုံး ရလဒ်များရအောင် ဖန်တီးပေးနိုင်ခဲ့ပါတယ်",
+    cards: [
+      {
+        id: 1,
+        title:
+
+          "UEDC Myanmar",
+        description: "လုပ်ငန်းသုံးအ‌ရောင်း စီမံခန့်ခွဲ‌ရေး software ဖြင့် အော်ဒါကောက် ကြန့်ကြာနေမှုပြသာနာကို ဖြေရှင်းပေးနိုင်ခဲ့ပါတယ်",
+        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ့ ကြည့်မယ်",
+        image: "/images/uedc.png",
+        variant: "primary",
+      },
+      {
+        id: 2,
+        title:
+          "Mi Mi Cosmetic",
+        description: "အော်ဒါ စီမံခန့်ခွဲ‌ရေး သီးသန့် software ဖြင့် အရောင်းအဝယ် စာရင်းကို စနစ်တကျ မှတ်တမ်းတင်ပေးပြီး စာရင်းတွက်ရတဲ့ အခက်အခဲကို ဖြေရှင်း‌ပေးနိုင်ခဲ့ပါတယ်",
+        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ့ ကြည့်မယ်",
+        image: "/images/mimi.png",
+        variant: "secondary",
+      },
+      {
+        id: 3,
+        title:
+          "Healthy Nara",
+        description: "လုပ်ငန်းသုံးစီမံခန့်ခွဲ‌ရေး software ဖြင့် Healthy Nara ရဲ့ လုပ်ငန်းဆိုင်ရာ အချိန်ကြန့်ကြာမှုများကို လျော့ချကာ မြန်ဆန်စွာ လုပ်ဆောင်နိုင်ရန် ကူညီပေးခဲ့ပါတယ်",
+        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ့ ကြည့်မယ်",
+        image: "/images/healthyNara.png",
+        variant: "secondary",
+      },
+    ],
+
+  },
+
   about: {
     hero: {
       title:
@@ -315,6 +356,11 @@ export const content = {
     },
     address:
       "No(503), Building (1), 7 Mile Condo, Parami Road, Mayangone Township, Yangon",
+
+    linkHeader: [
+      { title1: "အခြားသော link များ" },
+      { title2: "ရုံးခန်းလိပ်စာ" },
+    ],
     quickLinks: [
       { label: "OTAS အကြောင်း", href: "/about" },
       { label: "ရနိုင်တဲ့ Service များ", href: "/services" },

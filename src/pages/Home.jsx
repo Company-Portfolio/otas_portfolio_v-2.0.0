@@ -4,6 +4,7 @@ import { CaseStudySection } from "@/components/sections/CaseStudySection"
 import { CTASection } from "@/components/sections/CTASection"
 import { ClientLogos } from "@/components/sections/ClientLogos"
 import { FAQSection } from "@/components/sections/FAQSection"
+import SuccessRecord from "../components/sections/SuccessRecord"
 
 export function Home() {
   return (
@@ -11,8 +12,9 @@ export function Home() {
       <HeroSection />
       <ServiceSection />
       <CaseStudySection />
-      <CTASection />
       <ClientLogos />
+      <CTASection />
+      <SuccessRecord />
       <FAQSection />
     </main>
   )

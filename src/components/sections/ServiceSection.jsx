@@ -22,7 +22,7 @@ export function ServiceSection() {
                 {content.services.badge}
               </div>
             </div>
-            <p className="text-lg lg:text-[24px] text-foreground leading-relaxed">
+            <p className="text-lg lg:text-[24px] text-foreground leading-relaxed font-bold w-[80%]">
               {content.services.description}
             </p>
           </motion.div>

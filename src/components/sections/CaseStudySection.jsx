@@ -6,10 +6,10 @@ import { fadeInUp, staggerContainer } from "@/utils/animations";
 
 export function CaseStudySection() {
   return (
-    <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)] bg-background-light">
+    <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)]">
       <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
         <motion.h2
-          className="font-aj11 text-center text-primary text-3xl md:text-4xl font-bold text-foreground mb-[var(--heading-mb)]"
+          className="font-aj11 text-center text-primary text-3xl md:text-4xl text-foreground mb-[var(--heading-mb)]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -46,15 +46,11 @@ export function CaseStudySection() {
                 </div>
 
                 {/* Description */}
-                <p className="h-[50px] text-sm text-muted-foreground mb-6 line-clamp-2">
+                <p className="h-[60px] text-[20px] text-muted-foreground mb-6 line-clamp-2 font-bold w-[95%]">
                   {study.description}
                 </p>
 
-                {/* View More Button */}
-                <Button variant="ghost" className="group/btn p-0 h-auto">
-                  <span className="text-primary">ပိုမိုကြည့်ရန်</span>
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
+
               </div>
 
               {/* Background Image */}

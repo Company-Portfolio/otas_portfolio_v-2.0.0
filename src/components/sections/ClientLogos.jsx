@@ -7,9 +7,9 @@ import { fadeInUp, staggerContainer } from "@/utils/animations"
 export function ClientLogos() {
   return (
     <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)] bg-white">
-      <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
-        <motion.h2 
-          className="text-3xl md:text-4xl font-bold text-foreground mb-[var(--heading-mb)]"
+      <div className="mx-auto w-full text-center max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
+        <motion.h2
+          className="font-aj11 text-primary text-3xl md:text-4xl font-bold text-foreground mb-[var(--heading-mb)]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -19,7 +19,7 @@ export function ClientLogos() {
         </motion.h2>
 
         {/* Client Logos Grid */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-8"
           initial="hidden"
           whileInView="visible"
@@ -45,17 +45,20 @@ export function ClientLogos() {
         </motion.div>
 
         {/* View All Button */}
-        <motion.div 
+        <motion.div
           className="text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
         >
-          <Button variant="outline" size="lg">
-            {content.clients.viewAll}
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          <a to="/clients" className="group inline-block no-underline">
+            <Button variant="link" size="lg" className="text-primary font-aj11 p-0 hover:no-underline flex items-center cursor-pointer">
+              {content.clients.viewAll}
+              <ArrowRight className="ml-2 h-5 w-5 text-primary" />
+            </Button>
+            <div className="w-full bg-primary h-[2px] transition-transform duration-300 scale-x-0 group-hover:scale-x-100 origin-left"></div>
+          </a>
         </motion.div>
       </div>
     </section>

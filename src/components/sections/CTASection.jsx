@@ -8,7 +8,7 @@ export function CTASection() {
     <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)]">
       <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
         <motion.h2
-          className="font-aj11 text-3xl md:text-4xl tracking-wider text-foreground mb-[var(--heading-mb)] text-center"
+          className="font-aj11 text-3xl tracking-wider text-foreground mb-[var(--heading-mb)] text-center font-normal md:text-[64px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -27,24 +27,24 @@ export function CTASection() {
           {content.cta.cards.map((card) => (
             <motion.div
               key={card.id}
-              className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow"
+              className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow text-primary"
               variants={fadeInUp}
             >
-              <div className="p-6 flex flex-col items-center">
-                <h3 className="w-full lg:w-[420px] font-aj11 text-xl md:text-2xl font-bold text-foreground mb-6 leading-[2]">
+              <div className="p-6 flex flex-col items-center w-full">
+                <h3 className="w-full lg:w-[78%] font-aj11 lg:text-[40px] text-foreground mb-6 leading-[2] text-primary text-center">
                   {card.title}
                 </h3>
                 <div className="flex flex-col sm:flex-row w-full justify-between lg:w-[420px] gap-4">
                   <Button
                     size="lg"
-                    className="text-white font-aj11 bg-primary hover:bg-primary/90 flex-1"
+                    className="text-white font-aj11 bg-primary hover:bg-primary/90 flex-1 cursor-pointer"
                   >
                     {card.cta1}
                   </Button>
                   <Button
                     size="lg"
                     variant="outline"
-                    className="font-aj11 flex-1"
+                    className="font-aj11 flex-1 cursor-pointer"
                   >
                     {card.cta2}
                   </Button>
