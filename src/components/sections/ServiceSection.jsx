@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { content } from "@/data/content";
 import { fadeInUp, fadeInLeft, staggerContainer } from "@/utils/animations";
 

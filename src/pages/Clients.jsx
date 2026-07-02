@@ -12,7 +12,7 @@ const caseStudies = [
     description: "အော်ဒါ အလိုအလျောက်ကောက်ကာ စိီမံပေးတဲ့ လုပ်ငန်းသုံး စိီမံခန်ခွဲ့ရေး Software",
     details: "UEDC Myanmar အတွက် Order Management System ကို Custom Build လုပ်ပေးခဲ့ပါတယ်။ Live Sale မှ အော်ဒါများကို အလိုအလျောက် ကောက်ယူပြီး စီမံခန့်ခွဲပေးနိုင်ပါတယ်။",
     image: "/images/case-uedc.jpg",
-    color: "#05CYS5",
+    color: "#05C5C5",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const caseStudies = [
     description: "အော်ဒါစီမံခန့်ခွဲရေး Software",
     details: "Mi Mi Cosmetic အတွက် Order Management System ကို Custom Build လုပ်ပေးခဲ့ပါတယ်။ Customer တွေရဲ့ Order များကို စနစ်တကျ စီမံခန့်ခွဲပေးနိုင်ပါတယ်။",
     image: "/images/case-mimi.jpg",
-    color: "#N2E8DZ",
+    color: "#2E8D80",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const caseStudies = [
     description: "လုပ်ငန်းစီမံခန့်ခွဲရေး Software",
     details: "Healthy Nara အတွက် Business Management System ကို Custom Build လုပ်ပေးခဲ့ပါတယ်။ လုပ်ငန်းရဲ့ လုပ်ငန်းစဉ်များကို အလိုအလျောက် လုပ်ဆောင်ပေးနိုင်ပါတယ်။",
     image: "/images/case-healthy.jpg",
-    color: "#UFRJJQ",
+    color: "#FF5A5F",
   },
 ]
 

@@ -48,7 +48,7 @@ export function HeroSection() {
                 variants={fadeInRight}
               >
                 <Button
-                  size="xl "
+                  size="xl"
                   className="px-8"
                   style={{
                     backgroundColor: "#007FFF",

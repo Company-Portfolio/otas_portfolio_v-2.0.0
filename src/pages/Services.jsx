@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge"
-import { Card, CardContent } from "@/components/ui/card"
 import { Globe, Code, Mail, Bot, CheckCircle } from "lucide-react"
 import { content } from "@/data/content"
 

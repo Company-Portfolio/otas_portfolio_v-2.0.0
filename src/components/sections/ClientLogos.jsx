@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
+import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { content } from "@/data/content"
 import { fadeInUp, staggerContainer } from "@/utils/animations"
@@ -52,13 +53,13 @@ export function ClientLogos() {
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
         >
-          <a to="/clients" className="group inline-block no-underline">
+          <Link to="/clients" className="group inline-block no-underline">
             <Button variant="link" size="lg" className="text-primary font-aj11 p-0 hover:no-underline flex items-center cursor-pointer">
               {content.clients.viewAll}
               <ArrowRight className="ml-2 h-5 w-5 text-primary" />
             </Button>
             <div className="w-full bg-primary h-[2px] transition-transform duration-300 scale-x-0 group-hover:scale-x-100 origin-left"></div>
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
