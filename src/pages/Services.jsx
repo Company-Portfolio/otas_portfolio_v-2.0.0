@@ -1,132 +1,101 @@
-import { Badge } from "@/components/ui/badge"
-import { Globe, Code, Mail, Bot, CheckCircle } from "lucide-react"
-import { content } from "@/data/content"
+import Hero from '@/components/sections/Hero'
+import { CaseStudySection } from '@/components/sections/CaseStudySection'
 
 const serviceDetails = [
   {
     id: 1,
-    icon: Globe,
     title: "Business Portfolio",
-    subtitle: "Business Website",
-    description: "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Website များ",
-    benefits: [
-      "Online Presence တိုးလာခြင်း",
-      "Customer ယုံကြည်မှု တိုးလာခြင်း",
-      "Brand Identity ပိုခိုင်မာလာခြင်း",
-      "24/7 ဝန်ဆောင်မှု ရရှိခြင်း",
-    ],
-    image: "/images/service-website.jpg",
+    subtitle: "လုပ်ငန်းရဲ့ ယုံကြည်မှုတိုးစေမယ့်",
+    description: "ယုံကြည်စိတ်ချရတဲ့ Business Website ရှိထားခြင်းက စစချင်း ဖောက်သည်အသစ်တွေ သင့်လုပ်ငန်းကို ဘယ်လိုမြင်သွားမလဲ ဆိုတဲ့ First Impression ကို ပိုမိုကောင်းမွန်စေမှာပါ ",
+    image: "/images/image48.png",
   },
   {
     id: 2,
-    icon: Mail,
     title: "Business Email",
-    subtitle: "Business Email for Brand Identity",
-    description: "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေတဲ့ Business Email များ",
-    benefits: [
-      "Professional Email Address",
-      "Brand Identity တိုးလာခြင်း",
-      "Security ပိုမိုခိုင်မာခြင်း",
-      "Storage ပိုမိုရရှိခြင်း",
-    ],
-    image: "/images/service-email.jpg",
+    subtitle: "လုပ်ငန်းရဲ့ ပုံရိပ်ကို မြှင့်တင်ပေးမဲ့",
+    description: "Business Email မရှိဘဲ Personal Gmail account တွေနဲ့ အလုပ်လုပ်နေတာဟာ သင့်လုပ်ငန်းရဲ့ ပုံရိပ်ကို အများကြီး ထိခိုက်စေသလို အန္တရာယ်လည်းများပါတယ်။ သင့်လုပ်ငန်းရဲ့ လုံခြုံမှုနဲ့ ယုံကြည်စိတ်ချရမှုအတွက် အရေးကြီးတဲ့ Business Email ကို ကျွန်တော်တို OTAS Tech Solutions မှာ အပ်နှံလိုက်ပါ။",
+    image: "/images/image49.png",
   },
   {
     id: 3,
-    icon: Bot,
     title: "AI Agent",
-    subtitle: "AI Agents for Automation",
-    description: "လုပ်ငန်းတွေကို အလိုအလျောက် လုပ်ဆောင်ပေးနိုင်တဲ့ AI Agents များ",
-    benefits: [
-      "အလုပ်သမား အချိန် သက်သာခြင်း",
-      "Accuracy ပိုမိုမြင့်မားခြင်း",
-      "Cost လျှော့ချနိုင်ခြင်း",
-      "24/7 အလုပ်လုပ်နိုင်ခြင်း",
-    ],
-    image: "/images/service-ai.jpg",
+    subtitle: "လုပ်ငန်းရဲ့ အချိန်ကို တိုးချဲ့ပေးမဲ့",
+    description: "AI သုံးခြင်းဟာ လုပ်ငန်းရှင်တွေအတွက် ပိုကောင်းမလား ပိုဆိုးမလား။ အလုပ်သမား အချိန်ကုန်သက်သာစေပြီး Accuracy ပိုမိုမြင့်မားစေကာ လုပ်ငန်းတွေကို အလိုအလျောက် ပိုမိုမြန်ဆန် စနစ်ကျစေမှာ ဖြစ်ပါတယ်။",
+    image: "/images/image50.png",
   },
   {
     id: 4,
-    icon: Code,
     title: "Customize Software",
-    subtitle: "Customize Software for Business Problems",
-    description: "လုပ်ငန်းရဲ့ အခက်အခဲတွေကို ဖြေရှင်းပေးနိုင်တဲ့ Software များ",
-    benefits: [
-      "လုပ်ငန်းအတိုင်းအတာအလိုက် Customization",
-      "Efficiency တိုးလာခြင်း",
-      "Data Management ပိုကောင်းခြင်း",
-      "ROI ပိုမိုရရှိခြင်း",
-    ],
-    image: "/images/service-software.jpg",
+    subtitle: "လုပ်ငန်းရဲ့ အခက်အခဲကို လွယ်လွယ်ကူကူ ဖြေရှင်းပေးမဲ့",
+    description: "သင့်လုပ်ငန်းလိုအပ်ချက်အလိုက် စနစ်တကျ ရေးဆွဲပေးထားတဲ့ Customized Software Development များသည် လုပ်ငန်းလည်ပတ်မှုကို ပိုမိုသွက်လက် စနစ်ကျစေပြီး ဒေတာ စီမံခန့်ခွဲမှုတွေကို အကောင်းဆုံး ကူညီပေးမှာ ဖြစ်ပါတယ်။",
+    image: "/images/image51.png",
   },
+]
+
+const commonBenefits = [
+  "လုပ်ငန်းသုံး Business Email အခမဲ့ (၁နှစ်စာ)",
+  "လုပ်ငန်းအလိုက် အခမဲ့ ယုံကြည်မှု",
+  "လုပ်ငန်းခြင်း စိတ်ချယုံကြည်မှု မြန်ဆန်ခြင်း",
+  "24/7 Digital ရုံးခန်းဝန်ဆောင်မှု",
 ]
 
 export function Services() {
   return (
-    <main>
+    <main className="w-full bg-white">
       {/* Hero Section */}
-      <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)] bg-background-light">
-        <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
-          <div className="text-center max-w-3xl mx-auto">
-            <Badge className="mb-6">ရနိုင်တဲ့ Service များ</Badge>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              လုပ်ငန်းရှင်တွေရဲ့ အခက်အခဲတွေကို ဖြေရှင်းပေးမဲ့ Service များ
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              {content.services.description}
-            </p>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
-      {/* Service Details */}
       {serviceDetails.map((service, index) => (
         <section
           key={service.id}
-          className={`py-[var(--section-py)] lg:py-[var(--section-py-lg)] ${index % 2 === 0 ? 'bg-white' : 'bg-background-light'}`}
+          className={`py-16 md:py-24 select-none`}
         >
-          <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
-            <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center ${
-              index % 2 === 0 ? '' : 'lg:flex-row-reverse'
-            }`}>
-              {/* Content */}
-              <div className={`space-y-6 ${index % 2 !== 0 ? 'lg:order-2' : ''}`}>
-                <div className="flex items-center gap-3">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <service.icon className="h-6 w-6" />
-                  </div>
-                  <Badge variant="secondary">{service.subtitle}</Badge>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+              <div className="lg:col-span-7 space-y-4 md:space-y-5 text-left">
+
+                <div className="space-y-1">
+                  <p className="text-slate-900 lg:text-[40px] sm:text-xl md:text-2xl font-bold font-myanmar leading-tight">
+                    {service.subtitle}
+                  </p>
+                  <h2 className="lg:text-[40px] sm:text-4xl md:text-5xl font-bold text-slate-950 font-sans leading-none tracking-tight pt-3">
+                    {service.title}
+                  </h2>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                  {service.title}
-                </h2>
-                <p className="text-lg text-muted-foreground">
+
+                <p className="text-slate-600 lg:text-[20px] sm:text-sm md:text-[15px] font-bold font-myanmar leading-relaxed max-w-xl pt-2 w-[80%]">
                   {service.description}
                 </p>
-                <ul className="space-y-3">
-                  {service.benefits.map((benefit, i) => (
+                <ul className="space-y-7 pt-4">
+                  {commonBenefits.map((benefit, i) => (
                     <li key={i} className="flex items-center gap-3">
-                      <CheckCircle className="h-5 w-5 text-success shrink-0" />
-                      <span className="text-foreground">{benefit}</span>
+
+                      <span className="text-slate-800 text-xs lg:text-[20px] sm:text-sm md:text-[15px] font-bold font-aj11">
+                        {benefit}
+                      </span>
                     </li>
                   ))}
                 </ul>
+
               </div>
 
-              {/* Image */}
-              <div className={`${index % 2 !== 0 ? 'lg:order-1' : ''}`}>
-                <div className="relative rounded-2xl overflow-hidden border-4 border-white shadow-lg">
+              <div className="lg:col-span-5 w-full flex justify-center lg:justify-end h-120">
+                <div className="w-full max-w-[460px] aspect-square sm:aspect-[4/3] rounded-2xl overflow-hidden bg-white border-4 border-white shadow-md">
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="h-full w-full object-cover aspect-video"
+                    className="h-full w-full object-cover object-center transition-transform duration-500"
                   />
                 </div>
               </div>
             </div>
           </div>
+
+
         </section>
       ))}
+      <CaseStudySection />
     </main>
   )
 }

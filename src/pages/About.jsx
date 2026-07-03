@@ -1,23 +1,14 @@
 // import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { content } from "@/data/content"
-
+import Hero from "@/components/sections/Hero"
 export function About() {
   return (
     <main>
       {/* Hero Section */}
       <section className="w-full bg-background-light relative">
         {/* Navbar အနောက်မှာ ခံမယ့် Inset Blue Background Block */}
-        <div className="absolute top-0 left-0 right-0 h-16 md:h-20 bg-[#0B5FB2] z-0" />
-
-        {/* Hero Image Container */}
-        <div className="w-full h-full pt-16 md:pt-20 relative z-10">
-          <img
-            src={content.about.hero.image}
-            alt="About Hero"
-            className="h-full w-full object-cover"
-          />
-        </div>
+        <Hero />
 
         <div className="w-full rounded-2xl mx-auto max-w-5xl px-4 mt-10">
           <img
