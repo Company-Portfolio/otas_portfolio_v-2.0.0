@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Menu, Globe, ChevronDown, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,7 +21,7 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 20);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -29,10 +29,7 @@ export function Navbar() {
 
   return (
     <motion.nav
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 px-4 bg-white sm:px-6 lg:px-8 transition-all duration-300",
-        scrolled ? "mt-0" : "mt-0",
-      )}
+      className="fixed top-0 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-8"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
@@ -40,25 +37,26 @@ export function Navbar() {
       <div className="mx-auto max-w-7xl">
         <div
           className={cn(
-            "font-aj11 flex h-16 md:h-24 items-center justify-between px-4 md:px-6 transition-shadow duration-300",
+            "bg-white rounded-b-xl md:rounded-b-2xl transition-all duration-300 px-4 md:px-6 lg:px-8",
+            "flex h-16 md:h-20 items-center justify-between",
+            scrolled ? "shadow-md border-b border-x border-slate-100/80" : "shadow-sm border-b border-x border-slate-100"
           )}
         >
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 shrink-0">
+          <Link to="/" className="flex items-center shrink-0">
             <img
               src={content.nav.logo}
               alt="OTAS Logo"
-              className="h-10 md:h-[72px] w-10 md:w-[72px] object-contain"
+              className="h-8 md:h-12 w-auto object-contain"
             />
           </Link>
-          <div className="flex items-center gap-10">
-            {/* Desktop Navigation */}
+
+          <div className="flex items-center gap-6 xl:gap-8">
+
             <div className="hidden lg:flex items-center gap-6 xl:gap-8">
-              {/* Language Selector */}
-              <div className="flex  gap-1.5 text-[18px] font-medium text-foreground hover:text-primary transition-colors">
-                <Globe className="h-5 w-5 mb-2" />
+              <div className="flex items-center gap-1 text-[14px] md:text-[15px] font-semibold text-slate-700 hover:text-primary transition-colors cursor-pointer font-aj11">
+                <Globe className="h-4 w-4" />
                 <span>{content.nav.language.code}</span>
-                <ChevronDown className="h-4 w-4" />
+                <ChevronDown className="h-3.5 w-3.5 text-slate-400" />
               </div>
 
               {/* Nav Links */}
@@ -67,8 +65,10 @@ export function Navbar() {
                   key={link.href}
                   to={link.href}
                   className={cn(
-                    "text-[18px] font-medium transition-colors hover:text-primary",
-                    isActive(link.href) ? "text-primary" : "text-foreground",
+                    "text-[14px] lg:text-[18px] transition-colors font-aj11",
+                    isActive(link.href)
+                      ? "text-[#007FFF]"
+                      : "text-slate-800 hover:text-[#007FFF]",
                   )}
                 >
                   {link.label}
@@ -77,12 +77,15 @@ export function Navbar() {
             </div>
 
             {/* CTA Button */}
-
             <Button
-              size="default"
-              className="hidden lg:flex items-center rounded-xl px-6 py-8"
+              asChild
+              className="hidden lg:flex items-center rounded-xl bg-[#007FFF] hover:bg-[#0066cc] text-white px-5 py-5 transition-colors duration-200 shrink-0"
             >
-              <span className="text-[20px] text-white">{content.nav.cta}</span>
+              <Link to="/contact">
+                <span className="text-[14px] md:text-[15px] font-bold font-myanmar">
+                  {content.nav.cta}
+                </span>
+              </Link>
             </Button>
           </div>
 
@@ -90,40 +93,41 @@ export function Navbar() {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden shrink-0"
+            className="lg:hidden shrink-0 hover:bg-slate-50 rounded-lg"
             onClick={() => setIsOpen(true)}
           >
-            <Menu className="h-6 w-6" />
+            <Menu className="h-5 w-5 text-slate-700" />
           </Button>
         </div>
       </div>
 
       {/* Mobile Dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-md">
+        <DialogContent className="sm:max-w-md rounded-2xl">
           <DialogHeader>
-            <DialogTitle className="flex items-center justify-between">
+            <DialogTitle className="flex items-center justify-between border-b border-slate-50 pb-3">
               <img
                 src={content.nav.logo}
                 alt="OTAS Logo"
-                className="h-10 w-10 object-contain"
+                className="h-8 w-auto object-contain"
               />
               <Button
                 variant="ghost"
                 size="icon"
+                className="rounded-lg"
                 onClick={() => setIsOpen(false)}
               >
-                <X className="h-5 w-5" />
+                <X className="h-5 w-5 text-slate-500" />
               </Button>
             </DialogTitle>
           </DialogHeader>
 
-          <div className="flex flex-col gap-4 py-4">
+          <div className="flex flex-col gap-4 py-2 text-left">
             {/* Language Selector */}
-            <button className="flex items-center gap-2 text-[18px] font-medium text-foreground hover:text-primary transition-colors">
-              <Globe className="h-4 w-4" />
-              <span>{content.nav.language.code}</span>
-              <ChevronDown className="h-3 w-3" />
+            <button className="flex items-center gap-2 text-[15px] font-bold text-slate-800 py-2 border-b border-slate-50">
+              <Globe className="h-4 w-4 text-slate-500" />
+              <span className="font-myanmar">{content.nav.language.code}</span>
+              <ChevronDown className="h-3 w-3 text-slate-400" />
             </button>
 
             {/* Nav Links */}
@@ -133,8 +137,8 @@ export function Navbar() {
                 to={link.href}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "text-[18px] font-medium transition-colors hover:text-primary py-2",
-                  isActive(link.href) ? "text-primary" : "text-foreground",
+                  "text-[15px] font-bold transition-colors py-2 border-b border-slate-50 font-myanmar",
+                  isActive(link.href) ? "text-[#007FFF]" : "text-slate-800",
                 )}
               >
                 {link.label}
@@ -142,8 +146,12 @@ export function Navbar() {
             ))}
 
             {/* CTA Button */}
-            <Button className="w-full mt-4" size="lg">
-              <span className="text-[18px] text-white">{content.nav.cta}</span>
+            <Button asChild className="w-full mt-4 bg-[#007FFF] hover:bg-[#0066cc] rounded-xl" size="lg">
+              <Link to="/contact" onClick={() => setIsOpen(false)}>
+                <span className="text-[15px] text-white font-bold font-myanmar">
+                  {content.nav.cta}
+                </span>
+              </Link>
             </Button>
           </div>
         </DialogContent>

@@ -27,7 +27,7 @@ export const content = {
     items: [
       {
         id: 1,
-        title: "Business Website For Brand Trust",
+        title: "AI Agents for Automation",
         description:
           "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Website များ",
         icon: "globe",
@@ -48,7 +48,7 @@ export const content = {
       },
       {
         id: 4,
-        title: "AI Agents for Automation",
+        title: "Business Email for Brand Identity",
         description:
           "လုပ်ငန်းတွေကို အလိုအလျောက် လုပ်ဆောင်ပေးနိုင်တဲ့ AI Agents များ",
         icon: "bot",
@@ -73,7 +73,7 @@ export const content = {
         logo: "/images/logo-intl-focus.png",
         description:
           "လုပ်ငန်းတာဝန်များကို စနစ်တကျ လုပ်ဆောင် စီမံခန့်ခွဲ့ပေးပြီး အချက်လက်များသိမ်းဆည်းပေးသော စိမံခန်ခွဲ့ရေး Software",
-        image: "/images/casetwo.png",
+        image: "/images/casethree.png",
         accentColor: "#N2E8DZ",
       },
       {
@@ -82,7 +82,7 @@ export const content = {
         logo: "/images/logo-livecode.png",
         description:
           "Live Sale မှ အော်ဒါများကို အလိုလျောက်‌ကောက်ခံပေးပြီး Live Saleတစ်ခုလုံးကို စိီမံခန့်ခွဲပေးတဲ့ Automation Software",
-        image: "/images/casethree.png",
+        image: "/images/casefour.png",
         accentColor: "#UFRJJQ",
       },
       {
@@ -91,7 +91,7 @@ export const content = {
         logo: "/images/logo-okgroup.png",
         description:
           "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Portfolio နှင့် Dash Board",
-        image: "/images/casefour.png",
+        image: "/images/casetwo.png",
         accentColor: "#O3NDGR",
       },
     ],
@@ -102,19 +102,20 @@ export const content = {
       {
         id: 1,
         title:
-          "ဆိုင်ရှင်တွေကို စိတ်အေးရအောင် စျေးကူရောင်းပေးမဲ့ Online ဆိုင်ခွဲ Auto Shop",
+
+          "လုပ်ငန်းရှင်တွေကို စျေးကူရောင်းပေးမဲ့ အိုတက်စ်ရဲ့ အေအိုင် အရောင်း ဝန်ထမ်း",
         cta1: "Auto Shop စမ်းသုံးကြည့်မယ်",
         cta2: "ဆက်သွယ်ဆွေးနွေးမယ်",
-        image: "/images/cta-autoshop.svg",
+        image: "/images/Group-1.png",
         variant: "primary",
       },
       {
         id: 2,
         title:
-          "လုပ်ငန်းရှင်တွေကို စျေးကူရောင်းပေးမဲ့ အိုတက်စ်ရဲ့ အေအိုင် အရောင်း ဝန်ထမ်း",
+          "ဆိုင်ရှင်တွေကို စိတ်အေးရမဲ့ Online ဆိုင်ခွဲ Auto Shop",
         cta1: "အေအိုင်အေးဂျင့် စမ်းသုံးကြည့်မယ်",
         cta2: "ဆက်သွယ်ဆွေးနွေးမယ်",
-        image: "/images/cta-aiagent.svg",
+        image: "/images/image-6.png",
         variant: "secondary",
       },
     ],
@@ -138,7 +139,7 @@ export const content = {
       { id: 5, name: "Funglish Max", logo: "/images/client-funglish.svg" },
       {
         id: 6,
-        name: "OK Group of Compaines",
+        name: "OK Group of Companies",
         logo: "/images/client-okgroup.svg",
       },
       {
@@ -160,11 +161,13 @@ export const content = {
     ],
   },
   faq: {
+    title: "မေးခွန်းနဲ့ အဖြေများ",
+    subtitle: "အိုတက်ခ်ကို လုပ်ငန်းရှင်တွေအမေးများသော မေးခွန်းများ",
     tabs: [
-      { id: "website", label: "Business Website" },
-      { id: "software", label: "Customize Software" },
-      { id: "email", label: "Business Email" },
-      { id: "ai", label: "AI Agent" },
+      { id: "website", label: "Business Website ဆိုင်ရာ" },
+      { id: "software", label: "Customize Software ဆိုင်ရာ" },
+      { id: "email", label: "Business Email ဆိုင်ရာ" },
+      { id: "ai", label: "AI Agent ဆိုင်ရာ" },
     ],
     items: {
       website: [
@@ -226,82 +229,141 @@ export const content = {
       ],
     },
   },
+
+
+  success: {
+    badge: "အောင်မြင်မှု မှတ်တမ်းများ",
+    subTitle: "အိုတက်စ် အနေနဲ့ လုပ်ငန်းရှင်တွေရဲ့ အခက်အခဲတွေကို ဆွေးနွေးတိုင်ပင်အဖြေရှာပြီး အကောင်းဆုံး ရလဒ်များရအောင် ဖန်တီးပေးနိုင်ခဲ့ပါတယ်",
+    cards: [
+      {
+        id: 1,
+        title:
+
+          "UEDC Myanmar",
+        description: "လုပ်ငန်းသုံးအ‌ရောင်း စီမံခန့်ခွဲ‌ရေး software ဖြင့် အော်ဒါကောက် ကြန့်ကြာနေမှုပြသာနာကို ဖြေရှင်းပေးနိုင်ခဲ့ပါတယ်",
+        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ့ ကြည့်မယ်",
+        image: "/images/uedc.png",
+        variant: "primary",
+      },
+      {
+        id: 2,
+        title:
+          "Mi Mi Cosmetic",
+        description: "အော်ဒါ စီမံခန့်ခွဲ‌ရေး သီးသန့် software ဖြင့် အရောင်းအဝယ် စာရင်းကို စနစ်တကျ မှတ်တမ်းတင်ပေးပြီး စာရင်းတွက်ရတဲ့ အခက်အခဲကို ဖြေရှင်း‌ပေးနိုင်ခဲ့ပါတယ်",
+        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ့ ကြည့်မယ်",
+        image: "/images/mimi.png",
+        variant: "secondary",
+      },
+      {
+        id: 3,
+        title:
+          "Healthy Nara",
+        description: "လုပ်ငန်းသုံးစီမံခန့်ခွဲ‌ရေး software ဖြင့် Healthy Nara ရဲ့ လုပ်ငန်းဆိုင်ရာ အချိန်ကြန့်ကြာမှုများကို လျော့ချကာ မြန်ဆန်စွာ လုပ်ဆောင်နိုင်ရန် ကူညီပေးခဲ့ပါတယ်",
+        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ့ ကြည့်မယ်",
+        image: "/images/healthyNara.png",
+        variant: "secondary",
+      },
+    ],
+
+  },
+
   about: {
     hero: {
       title:
-        "လူကြီးမင်းတို့ရဲ့ လုပ်ငန်းတွေကို နည်းပညာနဲ့ တိုးတက်အောင် ကူညီပေးမဲ့ အိုတက်စ်",
-      image: "/images/about-hero.svg",
+        "လူကြီးမင်းတို့ရဲ့ လုပ်ငန်းတွေကို နည်းပညာနဲ့ \nတိုးတက်အောင် ကူညီပေးမဲ့ အိုတက်စ်",
+      image: "/images/HeroBannerSection.png",
     },
     journey: {
       title: "အိုတက်စ်ရဲ့ ခရီးစဉ်",
+      image: "/images/image62.png",
       stats: [
-        { label: "အိုတက်စ်ရဲ့ ခရီးစဉ်", value: "၄ နှစ်ကြာ" },
+        { label: "တိုးတက်ခဲ့တဲ့ ခရီးစဉ်", value: "၄ နှစ်ကြာ" },
         { label: "ကူညီတိုင်ပင်ပေးထားသော", value: "လုပ်ငန်းရှင် 200" },
       ],
     },
+    purpose: {
+      badge: "အိုတက်စ်ရဲ့ရည်ရွယ်ချက်",
+      description: "အိုတက်စ်ရဲ့ အဓိက ရည်ရွယ်ချက်က လုပ်ငန်းရှင်တွေ ကြုံတွေ့နေရတဲ့ အခက်အခဲတွေကို အကုန်အကျအနည်းဆုံးနဲ့ အချိန်တိုအတွင်း ထိရောက်စွာဖြေရှင်းပေးနိုင်ဖို့ ဖြစ်ပါတယ်",
+      image: "/images/image63.png",
+    },
     process: {
-      title: "ဘာကြောင့် ကျွန်တော်တို့ကို ရွေးချယ်သင့်လဲ",
+      title: "ဘာကြောင့် ရွေးချယ်သင့်လဲ",
+      description: "အိုတက်စ်ရဲ့ အဓိက ရည်ရွယ်ချက်က လုပ်ငန်းရှင်တွေ ကြုံတွေ့နေရတဲ့ အခက်အခဲတွေကို အကုန်အကျအနည်းဆုံးနဲ့ အချိန်တိုအတွင်း ထိရောက်စွာဖြေရှင်းပေးနိုင်ဖို့ ဖြစ်ပါတယ်",
       steps: [
         {
           step: "ပထမအဆင့်",
           title: "ဆွေးနွေးတိုင်ပင်မယ်",
           description:
-            "လုပ်ငန်းရဲ့ လိုအပ်ချက်တွေကို နားထောင်ပြီး ဆွေးနွေးတိုင်ပင်မယ်",
+            "အိုတက်စ် အနေနဲ့ လုပ်ငန်းရှင်ရဲ့ အခက်အခဲကို တိကျစွာသိရှိပြီး အထိရောက်ဆုံး ကူညီပေးဖို့အတွက် ပထမဆုံး လုပ်ငန်းနဲ့ပတ်သတ်ပြီး ဆွေးနွေးတိုင်ပင်ပေးပါတယ်",
         },
         {
           step: "ဒုတိယအဆင့်",
           title: "အဖြေရှာမယ်",
           description:
-            "လုပ်ငန်းရဲ့ အခက်အခဲတွေအတွက် အကောင်းဆုံး အဖြေရှာဖွေပေးမယ်",
+            "အိုတက်စ် အနေနဲ့ လုပ်ငန်းရှင်ရဲ့ အခက်အခဲကို သိပြီးတာနဲ့ ဖြေရှင်းဖို့ အထိရောက်ဆုံးနဲ့ အသက်သာဆုံး နည်းလမ်းတွေကို ရှာဖွေပြီး လုပ်ငန်းရှင်နဲ့ တိုင်ပင်ဆွေးနွေးပေးပါတယ်",
         },
         {
           step: "တတိယအဆင့်",
           title: "အဖြေကို တည်‌ဆောက်မယ်",
-          description: "ရှာဖွေထားတဲ့ အဖြေကို တည်ဆောက်ပေးမယ်",
+          description: "အထိရောက်ဆုံး နည်းလမ်းကို ရှာဖွေပြီးတာနဲ့ အကောင်ထည်ပေါ်လာအောင် Design ကနေစပြီး Development အဆင့်ထိ  တစ်ဆင့်ပြီးတစ်ဆင့် တည်ဆောက်ပေးပါတယ်",
         },
         {
           step: "စတုတ္ထအဆင့်",
           title: "ထိရောက်မှုရှိ မရှိ စမ်းသပ်မယ်",
-          description: "တည်ဆောက်ထားတဲ့ အဖြေရဲ့ ထိရောက်မှုကို စမ်းသပ်ကြည့်မယ်",
+          description: "သင့်တော်တဲ့ အဖြေကို တည်ဆောက်ပြီးတာနဲ့ လုပ်ငန်းအတွက်ကိုက်ညီမှု ရှိမရှိသေချာစေရန် Close Beta Testing မှတဆင့် အပြင်မှာ လက်တွေ့စမ်းသပ်ပေးပါတယ်",
         },
         {
           step: "နောက်ဆုံးအဆင့်",
           title: "လုပ်ငန်းရှင်လက်ထဲ လက်လွဲပေးမယ်",
-          description: "အဆင်ပြေသည်အထိ လုပ်ငန်းရှင်လက်ထဲ လက်လွဲပေးမယ်",
+          description: "အိုတက်စ်အနေနဲ့ စိတ်ချရတဲ့ စမ်းသပ်မှုတွေ လုပ်ပြီးတဲ့နောက် နည်းပညာအသုံးပြုရတဲ့ နည်းလမ်းတွေ သတိထားရတဲ့ အချက်တွေကို လက်တွေ့ကူညီ ပြသပေးပြီး လုပ်ငန်းရှင်လက်ထဲ လွဲပြောင်းပေးပါတယ်",
         },
         {
-          step: "အပို့အဆင့်",
-          title: "အချိန်တိူင်း အသင့်ရှိနေတယ်",
-          description: "လိုအပ်သမျှ အချိန်မရွေး ကူညီပေးနေမယ်",
+          step: "အပိုအဆင့်",
+          title: "အချိန်တိုင်း အသင့်ရှိနေတယ်",
+          description: "အိုတက်စ်အနေနဲ့ လုပ်ငန်းရှင်တွေရဲ့ နည်းပညာ အခက်အခဲတွေကို ကူညီဖြေရှင်းပေးဖို့ အမြဲအသင့်ရှိနေပါတယ်",
         },
       ],
     },
+
+    helpCustomers: {
+      title: "အိုတက်စ်မှ ကူညီဖြေရှင်းပေးထားတဲ့ လုပ်ငန်းရှင်များ",
+      image: ["/images/image64.png", "/images/image65.png", "/images/image66.png"],
+
+    },
+
+    clientHelp: {
+      title: "အိုတက်စ်မှ ကူညီဖြေရှင်းပေးထားတဲ့ လုပ်ငန်းရှင်များ",
+      items: [
+        {},
+      ]
+
+    },
     testimonials: {
-      title: "လုပ်ငန်းရှင်တွေရဲ့ ထင်မြင်ချက်များ",
+      title: "အိုတက်စ်အပေါ် လုပ်ငန်းရှင်တွေရဲ့ စကားသံများ",
       items: [
         {
           id: 1,
           name: "ကိုဖိုက်",
-          position: "UEDC Myanmar Founder",
+          position: "UEDC MYANMAR FOUNDER",
           quote:
-            "အိုတက်စ်က ကျွန်တော်တို့ရဲ့ လုပ်ငန်းကို နည်းပညာနဲ့ ပြောင်းလဲပေးပါတယ်။",
-          image: "/images/testimonial-1.svg",
+            "အိုတက်စ်ဆီက Customize Software ယူပြီးတဲ့နောက် ပစ္စည်းတွေ အော်ဒါကောက်တာ ပို့ပေးဖို့ကြန့်ကြာနေတဲ့ အပိုင်းတွေအများကြီးသက်သာသွားတယ်ဗျ ",
+          image: "/images/image67.png",
           logo: "/images/logo-uedc.png",
         },
         {
           id: 2,
           name: "မလင်းလင်း",
-          position: "General Manager / CHANGAN Myanmar",
-          quote: "ကျွန်မတို့ရဲ့ လုပ်ငန်းကို ပိုမိုထိရောက်အောင် ကူညီပေးပါတယ်။",
-          image: "/images/testimonial-2.svg",
+          position: "GENERAL MANAGER / CHANGAN MYANMAR",
+          quote: "အိုတက်စ်နဲ့ အလုပ်တွဲလုပ်ရတာ အများကြီး အဆင်ပြေပါတယ်ဗျ",
+          image: "/images/image68.png",
           logo: "/images/client-suzuki.svg",
         },
         {
           id: 3,
-          name: "ကိုကျောါမင်း",
-          position: "CEO / Suzuki Mega 6 Myanmar",
-          quote: "အိုတက်စ်ရဲ့ Service က အရမ်းကောင်းပါတယ်။",
-          image: "/images/testimonial-3.svg",
+          name: "ကိုကျော်မင်း",
+          position: "CEO / SUZUKI MEGA 6 MYANMAR",
+          quote: "အိုတက်စ်နဲ့ အလုပ်လုပ်ရတာ စိတ်ချရပြီး စိတ်ကျေနပ်မှု အပြည့်အဝရရှိပါတယ်",
+          image: "/images/casetwo.png",
           logo: "/images/client-suzuki.svg",
         },
       ],
@@ -315,6 +377,11 @@ export const content = {
     },
     address:
       "No(503), Building (1), 7 Mile Condo, Parami Road, Mayangone Township, Yangon",
+
+    linkHeader: [
+      { title1: "အခြားသော link များ" },
+      { title2: "ရုံးခန်းလိပ်စာ" },
+    ],
     quickLinks: [
       { label: "OTAS အကြောင်း", href: "/about" },
       { label: "ရနိုင်တဲ့ Service များ", href: "/services" },
