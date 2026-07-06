@@ -6,6 +6,7 @@ export const content = {
       { label: "ရနိုင်တဲ့ Service များ", href: "/services" },
       { label: "ပ‌ရောဂျက်များ", href: "/projects" },
       { label: "လုပ်ငန်းရှင်များ", href: "/clients" },
+      { label: "ဆက်သွယ်ဆွေးနွေးမယ်", href: "/contact" },
     ],
     cta: "ဆက်သွယ်ဆွေးနွေးမယ်",
     language: {
@@ -120,7 +121,7 @@ export const content = {
       },
     ],
   },
-  clients: {
+  clientsLogo: {
     title: "အိုတက်စ် နှင့် လက်တွဲထားသော လုပ်ငန်းများ",
     viewAll: "လုပ်ငန်းရှင် အားလုံးကို ကြည့်မယ်",
     items: [
