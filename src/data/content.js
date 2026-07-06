@@ -63,7 +63,7 @@ export const content = {
         company: "UEDC Myanmar",
         logo: "/images/logo-uedc.png",
         description:
-          "အော်ဒါ အလိုအလျောက်ကောက်ကာ စိီမံပေးတဲ့ လုပ်ငန်းသုံး စိီမံခန်ခွဲ့ရေး Software",
+          "အော်ဒါ အလိုအလျောက်ကောက်ပြီး စာရင်းသွင်း စိီမံပေးတဲ့ လုပ်ငန်းသုံး အရောင်း Sale Bot",
         image: "/images/caseone.png",
         //         accentColor: "#05C5C5",
       },
@@ -374,6 +374,68 @@ export const content = {
       ],
     },
   },
+
+
+  clients: {
+    title: "အိုတက်စ်မှတာဝန်ယူ ဆောင်ရွက်ပေးခဲ့တဲ့ ပရောဂျက်များ",
+    items: [
+      {
+        id: 1,
+        name: "UEDC MYANMAR",
+        description: "အော်ဒါ အလိုအလျောက်ကောက်ပြီး စာရင်းသွင်း စီမံပေးတဲ့ လုပ်ငန်းသုံး အရောင်း Sale Bot",
+        logo: "/images/logo-uedc.png",
+      },
+      {
+        id: 2,
+        name: "SUZUKI MEGA 6 CAR SHOWROOM",
+        description: "လုပ်ငန်းရဲ့ ယုံကြည်မှုကို မြှင့်တင်ပေးတဲ့ Business Portfolio",
+        logo: "/images/MEGA.png",
+      },
+      {
+        id: 3,
+        name: "LIVE CODE MYANMAR",
+        description: "Live Sale ကနေအော်ဒါ အလိုအလျောက်ကောက်ကာ စီမံပေးတဲ့ လုပ်ငန်းသုံး စီမံခန့်ခွဲရေး Software",
+        logo: "/images/live-code-logo.svg",
+      },
+      {
+        id: 4,
+        name: "INTERNATIONALFOCUS",
+        description: "လုပ်ငန်းတာဝန်များကို စနစ်တကျ စီမံခန့်ခွဲပေးပြီး အချက်အလက်များ သိမ်းဆည်းပေးသော စီမံခန့်ခွဲရေး Software",
+        logo: "/images/logo-intl-focus.png",
+      },
+      {
+        id: 5,
+        name: "OK GROUP OF COMPANIES",
+        description: "လုပ်ငန်းရဲ့ ယုံကြည်မှုကို မြှင့်တင်ပေးတဲ့ Business Portfolio",
+        logo: "/images/logo-okgroup.png",
+      },
+      {
+        id: 6,
+        name: "MEDICAL EDUCATION GUILD",
+        description: "လုပ်ငန်းရဲ့ ယုံကြည်မှုကို မြှင့်တင်ပေးတဲ့ Business Portfolio",
+        logo: "/images/client-medical.png",
+      },
+      {
+        id: 7,
+        name: "FUNGLISH MAX",
+        description: "လုပ်ငန်းရဲ့ ယုံကြည်မှုကို မြှင့်တင်ပေးတဲ့ Business Portfolio",
+        logo: "/images/funglish.png",
+      },
+      {
+        id: 8,
+        name: "DIGITAL SAW MARKETING AGENCY",
+        description: "လုပ်ငန်းရဲ့ ယုံကြည်မှုကို မြှင့်တင်ပေးတဲ့ Business Portfolio",
+        logo: "/images/digital-saw.png",
+      },
+      {
+        id: 9,
+        name: "DRINKING MODE",
+        description: "အရက်မူးပြီး မဖြစ်သင့်တဲ့ အရာတွေကို ကြိုတင်ဟန့်တားပေးတဲ့ Customize Software",
+        logo: "/images/client-drinkingmode.png",
+      },
+    ]
+  },
+
   footer: {
     cta: "အခုပဲ ဆက်သွယ်စုံစမ်းလိုက်ပါ",
     contact: {
@@ -400,4 +462,6 @@ export const content = {
     ],
     copyright: "© 2026 otastechsolutions.com, All right Reserved",
   },
+
+
 };
