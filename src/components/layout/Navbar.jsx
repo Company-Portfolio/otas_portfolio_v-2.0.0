@@ -79,10 +79,10 @@ export function Navbar() {
             {/* CTA Button */}
             <Button
               asChild
-              className="hidden lg:flex items-center rounded-xl bg-[#007FFF] hover:bg-[#0066cc] text-white px-5 py-5 transition-colors duration-200 shrink-0"
+              className="hidden lg:flex items-center rounded-md bg-primary hover:bg-[#0066cc] text-white p-7 transition-colors duration-200 shrink-0"
             >
               <Link to="/contact">
-                <span className="text-[14px] md:text-[15px] font-bold font-myanmar">
+                <span className="text-[14px] md:text-[15px] font-aj11">
                   {content.nav.cta}
                 </span>
               </Link>
