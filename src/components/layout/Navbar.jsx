@@ -15,24 +15,46 @@ import { content } from "@/data/content";
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const location = useLocation();
 
+  // 💡 ၁။ Scroll လားရာအလိုက် ပုန်း/ပြ လုပ်ရန် State အသစ် ၂ ခု
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const location = useLocation();
   const isActive = (href) => location.pathname === href;
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      const currentScrollY = window.scrollY;
+
+      setScrolled(currentScrollY > 20);
+
+      if (currentScrollY < 20) {
+        setIsVisible(true);
+      }
+      else if (currentScrollY > lastScrollY) {
+        setIsVisible(false);
+      }
+      else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [lastScrollY]);
 
   return (
     <motion.nav
-      className="fixed top-0 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-8"
+      className="fixed top-0 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-8 mt-5"
       initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      animate={{
+        y: isVisible ? 0 : -120,
+        opacity: isVisible ? 1 : 0
+      }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       <div className="mx-auto max-w-7xl">
         <div
@@ -51,7 +73,6 @@ export function Navbar() {
           </Link>
 
           <div className="flex items-center gap-6 xl:gap-8">
-
             <div className="hidden lg:flex items-center gap-6 xl:gap-8">
               <div className="flex items-center gap-1 text-[14px] md:text-[15px] font-semibold text-slate-700 hover:text-primary transition-colors cursor-pointer font-aj11">
                 <Globe className="h-4 w-4" />
@@ -93,7 +114,7 @@ export function Navbar() {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden shrink-0 hover:bg-slate-50 rounded-lg"
+            className="lg:hidden shrink-0 hover:bg-slate-50 rounded-lg cursor-pointer"
             onClick={() => setIsOpen(true)}
           >
             <Menu className="h-5 w-5 text-slate-700" />
@@ -103,18 +124,26 @@ export function Navbar() {
 
       {/* Mobile Dialog */}
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="sm:max-w-md rounded-2xl">
+        <DialogContent className="fixed inset-0 z-50 w-full h-full max-w-none m-0 rounded-none border-none bg-white p-6 translate-x-0 translate-y-0 lg:hidden">
           <DialogHeader>
-            <DialogTitle className="flex items-center justify-between border-b border-slate-50 pb-3">
-              <img
-                src={content.nav.logo}
+            <DialogTitle className="flex items-center justify-between border-b border-slate-50 pb-2">
+              {/* <img
+                src=
                 alt="OTAS Logo"
                 className="h-8 w-auto object-contain"
-              />
+              /> */}
+
+              <Link to={"/"} onClick={() => setIsOpen(false)}>
+                <img
+                  src={content.nav.logo}
+                  alt="OTAS Logo"
+                  className="h-8 w-auto object-contain"
+                />
+              </Link>
               <Button
                 variant="ghost"
                 size="icon"
-                className="rounded-lg"
+                className="rounded-lg cursor-pointer"
                 onClick={() => setIsOpen(false)}
               >
                 <X className="h-5 w-5 text-slate-500" />
@@ -122,9 +151,9 @@ export function Navbar() {
             </DialogTitle>
           </DialogHeader>
 
-          <div className="flex flex-col gap-4 py-2 text-left">
+          <div className="flex flex-col gap-4 py-2 text-center">
             {/* Language Selector */}
-            <button className="flex items-center gap-2 text-[15px] font-bold text-slate-800 py-2 border-b border-slate-50">
+            <button className="flex items-center justify-center gap-2 text-[15px] font-bold text-slate-800 py-2 border-b border-slate-50">
               <Globe className="h-4 w-4 text-slate-500" />
               <span className="font-myanmar">{content.nav.language.code}</span>
               <ChevronDown className="h-3 w-3 text-slate-400" />

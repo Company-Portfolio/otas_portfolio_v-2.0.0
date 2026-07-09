@@ -241,7 +241,7 @@ export const content = {
         title: "UEDC Myanmar",
         description:
           "လုပ်ငန်းသုံးအ‌ရောင်း စီမံခန့်ခွဲ‌ရေး software ဖြင့် အော်ဒါကောက် ကြန့်ကြာနေမှုပြသာနာကို ဖြေရှင်းပေးနိုင်ခဲ့ပါတယ်",
-        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ့ ကြည့်မယ်",
+        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ ကြည့်မယ်",
         image: "/images/uedc.png",
         variant: "primary",
       },
@@ -250,7 +250,7 @@ export const content = {
         title: "Mi Mi Cosmetic",
         description:
           "အော်ဒါ စီမံခန့်ခွဲ‌ရေး သီးသန့် software ဖြင့် အရောင်းအဝယ် စာရင်းကို စနစ်တကျ မှတ်တမ်းတင်ပေးပြီး စာရင်းတွက်ရတဲ့ အခက်အခဲကို ဖြေရှင်း‌ပေးနိုင်ခဲ့ပါတယ်",
-        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ့ ကြည့်မယ်",
+        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ ကြည့်မယ်",
         image: "/images/mimi.png",
         variant: "secondary",
       },
@@ -259,7 +259,7 @@ export const content = {
         title: "Healthy Nara",
         description:
           "လုပ်ငန်းသုံးစီမံခန့်ခွဲ‌ရေး software ဖြင့် Healthy Nara ရဲ့ လုပ်ငန်းဆိုင်ရာ အချိန်ကြန့်ကြာမှုများကို လျော့ချကာ မြန်ဆန်စွာ လုပ်ဆောင်နိုင်ရန် ကူညီပေးခဲ့ပါတယ်",
-        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ့ ကြည့်မယ်",
+        cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ ကြည့်မယ်",
         image: "/images/healthyNara.png",
         variant: "secondary",
       },
@@ -463,6 +463,14 @@ export const content = {
     ],
     copyright: "© 2026 otastechsolutions.com, All right Reserved",
   },
+
+  heroImg: {
+    image: "/images/heroImg.png",
+    aboutTitle: "လူကြီးမင်းတို့ရဲ့  လုပ်ငန်းတွေကို နည်းပညာနဲ့ တိုးတက်အောင် ကူညီပေးမဲ့ အိုတက်စ်",
+    serviceTitle: "အိုတက်စ်က ကူညီဆောင်ရွက်ပေးနေတဲ့ နည်းပညာဆိုင်ရာ Services များ",
+    businessPartner: "လုပ်ငန်းရှင်တွေရဲ့အောင်မြင်မှုကအိုတက်စ်ရဲ့ အောင်မြင်မှုနဲ့ ထပ်တူကျပါတယ်",
+    contactTitle: "လုပ်ငန်းရှင်တွေကို အကူအညီပေးဖို့အတွက်  အိုတက်စ် က အမြဲအသင့်ရှိနေပါတယ်"
+  }
 
 
 };

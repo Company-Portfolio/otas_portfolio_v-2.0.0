@@ -4,6 +4,7 @@ import toast, { Toaster } from 'react-hot-toast'
 import Hero from '../components/sections/Hero'
 import { ArrowRight } from "lucide-react"
 import { ClientLogos } from '../components/sections/ClientLogos'
+import { content } from "../data/content"
 
 function Contact() {
     const [userRegistration, setUserRegistration] = useState({
@@ -54,7 +55,7 @@ function Contact() {
 
             {/* Hero Section */}
             <section className='relative'>
-                <Hero />
+                <Hero title={content.heroImg.contactTitle} className="w-full" />
             </section>
 
             {/* Form Section */}
@@ -101,11 +102,11 @@ function Contact() {
                                     </label>
                                     <div className="relative">
                                         <select
-                                            className="w-full px-4 py-3 border border-slate-200 rounded-md font-aj11 text-sm focus:outline-none focus:border-primary transition-all placeholder-slate-400 text-slate-400"
+                                            className="w-full px-4 py-3 border border-slate-200 rounded-md font-aj11 text-sm focus:outline-none focus:border-primary transition-all placeholder-slate-400 text-slate-900"
                                             value={userRegistration.serviceType}
                                             onChange={(e) => setUserRegistration({ ...userRegistration, serviceType: e.target.value })}
                                         >
-                                            <option value="" disabled>Service အမျိုးအစား ရွေးချယ်မယ်</option>
+                                            <option value="" className='text-slate-900'>Service အမျိုးအစား ရွေးချယ်မယ်</option>
                                             <option value="Business Portfolio Website">Business Portfolio Website</option>
                                             <option value="Business Email">Business Email</option>
                                             <option value="AI Agent Automation">AI Agent Automation</option>

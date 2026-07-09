@@ -40,7 +40,7 @@ export function ClientLogos() {
                 />
               </div>
 
-              <p className="text-slate-900 text-xs md:text-sm font-extrabold uppercase font-sans tracking-wide max-w-[160px] leading-snug">
+              <p className="text-slate-900 text-xs md:text-sm font-semibold uppercase font-sans tracking-wide max-w-[160px] leading-snug">
                 {client.name}
               </p>
             </motion.div>

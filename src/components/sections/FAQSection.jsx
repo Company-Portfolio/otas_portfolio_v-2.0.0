@@ -14,7 +14,7 @@ export function FAQSection() {
     <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)] bg-[#050505] text-white">
       <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)] flex flex-col items-start">
 
-        <div className="bg-white text-black font-aj11 text-xs md:text-sm font-medium px-4 py-1.5 rounded-md mb-4">
+        <div className="bg-white text-black font-aj11 lg:text-[20px] md:text-sm px-4 py-1.5 rounded-[var(--radius-md)] mb-4 py-4 px-6 w-fit">
           {content.faq.title}
         </div>
         <h2 className="font-myanmar text-xl md:text-3xl font-semibold mb-10 text-left text-white max-w-2xl leading-snug">
@@ -28,13 +28,13 @@ export function FAQSection() {
           variants={fadeInUp}
           className="w-full"
         >
-          <Tabs defaultValue="website" className="w-full">
-            <TabsList className="flex flex-wrap justify-start gap-8 mb-10 h-auto p-0 bg-transparent border-b border-zinc-800 rounded-none w-full">
+          <Tabs defaultValue="website" className="w-full cursor-pointer">
+            <TabsList className="flex flex-col md:flex-row justify-start gap-3 md:gap-8 mb-10 h-auto p-0 bg-transparent border-b-0 md:border-b md:border-zinc-800 rounded-none w-full">
               {content.faq.tabs.map((tab) => (
                 <TabsTrigger
                   key={tab.id}
                   value={tab.id}
-                  className="px-0 py-3 text-sm md:text-base font-myanmar font-medium bg-transparent text-zinc-500 rounded-none border-b-2 border-transparent data-[state=active]:bg-transparent data-[state=active]:text-primary data-[state=active]:border-primary transition-all duration-200"
+                  className="w-full md:w-auto text-left md:text-center px-0 py-3 text-base font-myanmar font-medium bg-transparent text-zinc-500 rounded-none border-b-2 border-zinc-800 md:border-transparent data-[state=active]:bg-transparent data-[state=active]:text-primary data-[state=active]:border-primary transition-all duration-200 cursor-pointer"
                 >
                   {tab.label}
                 </TabsTrigger>

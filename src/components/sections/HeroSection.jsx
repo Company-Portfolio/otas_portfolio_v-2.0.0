@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { content } from "@/data/content";
 import { fadeInLeft, fadeInRight } from "@/utils/animations";
+import { Link } from 'react-router-dom'
 
 export function HeroSection() {
   return (
@@ -54,9 +55,9 @@ export function HeroSection() {
                     backgroundColor: "#007FFF",
                   }}
                 >
-                  <span className="text-white text-[16px] lg:text-[24px]">
+                  <Link to={"/contact"} className="text-white text-[16px] lg:text-[24px]">
                     {content.hero.cta1}
-                  </span>
+                  </Link>
                 </Button>
                 <Button
                   size="xl"
@@ -67,7 +68,7 @@ export function HeroSection() {
                     color: "#007FFF",
                   }}
                 >
-                  <span className="text-[16px] lg:text-[24px]">
+                  <span className="text-[16px] lg:text-[24px] cursor-pointer">
                     {content.hero.cta2}
                   </span>
                 </Button>
