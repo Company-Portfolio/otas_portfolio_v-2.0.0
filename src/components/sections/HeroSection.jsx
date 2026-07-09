@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { content } from "@/data/content";
 import { fadeInLeft, fadeInRight } from "@/utils/animations";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export function HeroSection() {
   return (
@@ -45,7 +45,7 @@ export function HeroSection() {
               </motion.h1>
 
               <motion.div
-                className="flex flex-row gap-4"
+                className="flex flex-col sm:flex-row gap-4"
                 variants={fadeInRight}
               >
                 <Button
@@ -55,7 +55,10 @@ export function HeroSection() {
                     backgroundColor: "#007FFF",
                   }}
                 >
-                  <Link to={"/contact"} className="text-white text-[16px] lg:text-[24px]">
+                  <Link
+                    to={"/contact"}
+                    className="text-white text-[16px] sm:text-[20px] lg:text-[24px]"
+                  >
                     {content.hero.cta1}
                   </Link>
                 </Button>
@@ -68,7 +71,7 @@ export function HeroSection() {
                     color: "#007FFF",
                   }}
                 >
-                  <span className="text-[16px] lg:text-[24px] cursor-pointer">
+                  <span className="text-[16px] sm:text-[20px] lg:text-[24px] cursor-pointer">
                     {content.hero.cta2}
                   </span>
                 </Button>

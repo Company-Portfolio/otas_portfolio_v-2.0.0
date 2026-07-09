@@ -31,11 +31,9 @@ export function Navbar() {
 
       if (currentScrollY < 20) {
         setIsVisible(true);
-      }
-      else if (currentScrollY > lastScrollY) {
+      } else if (currentScrollY > lastScrollY) {
         setIsVisible(false);
-      }
-      else if (currentScrollY < lastScrollY) {
+      } else if (currentScrollY < lastScrollY) {
         setIsVisible(true);
       }
 
@@ -48,20 +46,22 @@ export function Navbar() {
 
   return (
     <motion.nav
-      className="fixed top-0 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-8 mt-5"
+      className="fixed top-0 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-8 py-4 bg-[#F9F8F8]"
       initial={{ y: -100, opacity: 0 }}
       animate={{
         y: isVisible ? 0 : -120,
-        opacity: isVisible ? 1 : 0
+        opacity: isVisible ? 1 : 0,
       }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
     >
       <div className="mx-auto max-w-7xl">
         <div
           className={cn(
-            "bg-white rounded-b-xl md:rounded-b-2xl transition-all duration-300 px-4 md:px-6 lg:px-8",
+            "bg-white transition-all duration-300 px-4 md:px-6 lg:px-8",
             "flex h-16 md:h-20 items-center justify-between",
-            scrolled ? "shadow-md border-b border-x border-slate-100/80" : "shadow-sm border-b border-x border-slate-100"
+            scrolled
+              ? "shadow-md border-b border-x border-slate-100/80"
+              : "shadow-sm border-b border-x border-slate-100",
           )}
         >
           <Link to="/" className="flex items-center shrink-0">
@@ -175,7 +175,11 @@ export function Navbar() {
             ))}
 
             {/* CTA Button */}
-            <Button asChild className="w-full mt-4 bg-[#007FFF] hover:bg-[#0066cc] rounded-xl" size="lg">
+            <Button
+              asChild
+              className="w-full mt-4 bg-[#007FFF] hover:bg-[#0066cc] rounded-xl"
+              size="lg"
+            >
               <Link to="/contact" onClick={() => setIsOpen(false)}>
                 <span className="text-[15px] text-white font-bold font-myanmar">
                   {content.nav.cta}

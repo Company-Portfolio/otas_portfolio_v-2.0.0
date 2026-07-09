@@ -126,6 +126,14 @@
   .bg-gradient-dark {
     background: linear-gradient(270deg, rgba(106, 106, 106, 1) 0%, rgba(34, 34, 34, 0.13) 100%);
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Base Styles */

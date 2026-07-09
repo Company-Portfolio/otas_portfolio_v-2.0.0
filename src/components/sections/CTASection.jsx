@@ -37,14 +37,14 @@ export function CTASection() {
                 <div className="flex flex-col sm:flex-row w-full justify-between lg:w-[420px] gap-4">
                   <Button
                     size="lg"
-                    className="text-white font-aj11 bg-primary hover:bg-primary/90 flex-1 cursor-pointer"
+                    className="text-white py-3 font-aj11 bg-primary hover:bg-primary/90 flex-1 cursor-pointer"
                   >
                     {card.cta1}
                   </Button>
                   <Button
                     size="lg"
                     variant="outline"
-                    className="font-aj11 flex-1 cursor-pointer"
+                    className="font-aj11 py-3 flex-1 cursor-pointer"
                   >
                     {card.cta2}
                   </Button>
