@@ -9,28 +9,28 @@ const serviceDetails = [
     title: "Business Portfolio",
     subtitle: "လုပ်ငန်းရဲ့ ယုံကြည်မှုတိုးစေမယ့်",
     description: "ယုံကြည်စိတ်ချရတဲ့ Business Website ရှိထားခြင်းက စစချင်း ဖောက်သည်အသစ်တွေ သင့်လုပ်ငန်းကို ဘယ်လိုမြင်သွားမလဲ ဆိုတဲ့ First Impression ကို ပိုမိုကောင်းမွန်စေမှာပါ ",
-    image: "/images/image48.png",
+    image: "/images/image.png",
   },
   {
     id: 2,
     title: "Business Email",
     subtitle: "လုပ်ငန်းရဲ့ ပုံရိပ်ကို မြှင့်တင်ပေးမဲ့",
     description: "Business Email မရှိဘဲ Personal Gmail account တွေနဲ့ အလုပ်လုပ်နေတာဟာ သင့်လုပ်ငန်းရဲ့ ပုံရိပ်ကို အများကြီး ထိခိုက်စေသလို အန္တရာယ်လည်းများပါတယ်။ သင့်လုပ်ငန်းရဲ့ လုံခြုံမှုနဲ့ ယုံကြည်စိတ်ချရမှုအတွက် အရေးကြီးတဲ့ Business Email ကို ကျွန်တော်တို့ OTAS Tech Solutions မှာ အပ်နှံလိုက်ပါ။",
-    image: "/images/image49.png",
+    image: "/images/image2.png",
   },
   {
     id: 3,
     title: "AI Agent",
     subtitle: "လုပ်ငန်းရဲ့ အချိန်ကို တိုးချဲ့ပေးမဲ့",
     description: "AI သုံးခြင်းဟာ လုပ်ငန်းရှင်တွေအတွက် ပိုကောင်းမလား ပိုဆိုးမလား။ အလုပ်သမား အချိန်ကုန်သက်သာစေပြီး Accuracy ပိုမိုမြင့်မားစေကာ လုပ်ငန်းတွေကို အလိုအလျောက် ပိုမိုမြန်ဆန် စနစ်ကျစေမှာ ဖြစ်ပါတယ်။",
-    image: "/images/image50.png",
+    image: "/images/image3.png",
   },
   {
     id: 4,
     title: "Customize Software",
     subtitle: "လုပ်ငန်းရဲ့ အခက်အခဲကို လွယ်လွယ်ကူကူ ဖြေရှင်းပေးမဲ့",
     description: "သင့်လုပ်ငန်းလိုအပ်ချက်အလိုက် စနစ်တကျ ရေးဆွဲပေးထားတဲ့ Customized Software Development များသည် လုပ်ငန်းလည်ပတ်မှုကို ပိုမိုသွက်လက် စနစ်ကျစေပြီး ဒေတာ စီမံခန့်ခွဲမှုတွေကို အကောင်းဆုံး ကူညီပေးမှာ ဖြစ်ပါတယ်။",
-    image: "/images/image51.png",
+    image: "/images/image4.png",
   },
 ]
 
@@ -45,7 +45,7 @@ export function Services() {
   return (
     <main className="w-full bg-white">
       {/* Hero Section */}
-      <Hero title={content.heroImg.serviceTitle} />
+      <Hero images={content.service.banner} title={content.heroImg.serviceTitle} />
 
       {serviceDetails.map((service, index) => {
 

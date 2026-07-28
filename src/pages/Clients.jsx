@@ -29,7 +29,7 @@ export function Clients() {
   return (
     <main className="overflow-x-hidden">
       {/* Hero Section */}
-      <Hero title={content.heroImg.businessPartner} className="w-full" />
+      <Hero images={content.clients.banner} title={content.heroImg.businessPartner} className="w-full" />
 
       {/* Highlight Message Section */}
       <section>

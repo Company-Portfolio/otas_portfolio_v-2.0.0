@@ -1,7 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { content } from "@/data/content"
 import Hero from "@/components/sections/Hero"
-import { motion } from "framer-motion"; // 💡 ၁။ Framer Motion ကို Import ယူခြင်း
+import { motion } from "framer-motion";
+
+// 💡 ၁။ Framer Motion ကို Import ယူခြင်း
 
 export function About() {
 
@@ -27,7 +29,7 @@ export function About() {
     <main className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="w-full relative">
-        <Hero title={content.heroImg.aboutTitle} />
+        <Hero images={content.about.hero.image} title={content.heroImg.aboutTitle} />
 
         {/* Entry Fade Animation for Main Hero Image */}
         <motion.div

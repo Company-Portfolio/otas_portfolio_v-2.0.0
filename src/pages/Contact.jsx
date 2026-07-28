@@ -55,7 +55,7 @@ function Contact() {
 
             {/* Hero Section */}
             <section className='relative'>
-                <Hero title={content.heroImg.contactTitle} className="w-full" />
+                <Hero images={content.contact.banner} title={content.heroImg.contactTitle} className="w-full" />
             </section>
 
             {/* Form Section */}

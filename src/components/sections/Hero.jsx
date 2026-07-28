@@ -2,7 +2,7 @@
 import { content } from '@/data/content'
 
 // 💡 Page အလိုက် ပို့ပေးမယ့် title နဲ့ subtitle ကို Props အနေနဲ့ လက်ခံလိုက်ပါတယ်
-function Hero({ title, subtitle }) {
+function Hero({ images, title, subtitle }) {
     return (
         <div>
             <section className="w-full relative bg-[#0B5FB2]">
@@ -10,7 +10,7 @@ function Hero({ title, subtitle }) {
 
                 <div className="w-full h-full pt-16 md:pt-20 relative z-10">
                     <img
-                        src={content.heroImg.image}
+                        src={images || content.heroImg.image}
                         alt="Hero Banner"
                         className="h-full w-full object-cover"
                     />

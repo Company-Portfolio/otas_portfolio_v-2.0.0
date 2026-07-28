@@ -17,7 +17,7 @@ export const content = {
   hero: {
     title:
       "လုပ်ငန်းရှင်တွေရဲ့ အခက်အခဲတွေကို \nနည်းပညာနဲ့ ဖြေရှင်းပေးမဲ့ အိုတက်စ်",
-    backgroundImage: "/images/hero-bg.jpg",
+    backgroundImage: "/images/HeroBanner.png",
     cta1: "ဆက်သွယ်ဆွေးနွေးမယ်",
     cta2: "ရက်ချိန်းယူမယ်",
   },
@@ -230,7 +230,6 @@ export const content = {
       ],
     },
   },
-
   success: {
     badge: "အောင်မြင်မှု မှတ်တမ်းများ",
     subTitle:
@@ -270,11 +269,11 @@ export const content = {
     hero: {
       title:
         "လူကြီးမင်းတို့ရဲ့ လုပ်ငန်းတွေကို နည်းပညာနဲ့ \nတိုးတက်အောင် ကူညီပေးမဲ့ အိုတက်စ်",
-      image: "/images/HeroBannerSection.png",
+      image: "/images/AboutBannerSection.png",
     },
     journey: {
       title: "အိုတက်စ်ရဲ့ ခရီးစဉ်",
-      image: "/images/image62.png",
+      image: "/images/aboutcompany.png",
       stats: [
         { label: "တိုးတက်ခဲ့တဲ့ ခရီးစဉ်", value: "၄ နှစ်ကြာ" },
         { label: "ကူညီတိုင်ပင်ပေးထားသော", value: "လုပ်ငန်းရှင် 200" },
@@ -376,8 +375,13 @@ export const content = {
     },
   },
 
+  service: {
+    banner: "/images/ServiceBannerSection.png",
+  },
+
 
   clients: {
+    banner: "/images/ClientBannerSection.png",
     title: "အိုတက်စ်မှတာဝန်ယူ ဆောင်ရွက်ပေးခဲ့တဲ့ ပရောဂျက်များ",
     items: [
       {
@@ -435,6 +439,10 @@ export const content = {
         logo: "/images/client-drinkingmode.png",
       },
     ]
+  },
+
+  contact: {
+    banner: "/images/ContactBannerSection.png"
   },
 
   footer: {
