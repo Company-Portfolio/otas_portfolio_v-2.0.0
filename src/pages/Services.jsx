@@ -15,7 +15,7 @@ const serviceDetails = [
     id: 2,
     title: "Business Email",
     subtitle: "လုပ်ငန်းရဲ့ ပုံရိပ်ကို မြှင့်တင်ပေးမဲ့",
-    description: "Business Email မရှိဘဲ Personal Gmail account တွေနဲ့ အလုပ်လုပ်နေတာဟာ သင့်လုပ်ငန်းရဲ့ ပုံရိပ်ကို အများကြီး ထိခိုက်စေသလို အန္တရာယ်လည်းများပါတယ်။ သင့်လုပ်ငန်းရဲ့ လုံခြုံမှုနဲ့ ယုံကြည်စိတ်ချရမှုအတွက် အရေးကြီးတဲ့ Business Email ကို ကျွန်တော်တို OTAS Tech Solutions မှာ အပ်နှံလိုက်ပါ။",
+    description: "Business Email မရှိဘဲ Personal Gmail account တွေနဲ့ အလုပ်လုပ်နေတာဟာ သင့်လုပ်ငန်းရဲ့ ပုံရိပ်ကို အများကြီး ထိခိုက်စေသလို အန္တရာယ်လည်းများပါတယ်။ သင့်လုပ်ငန်းရဲ့ လုံခြုံမှုနဲ့ ယုံကြည်စိတ်ချရမှုအတွက် အရေးကြီးတဲ့ Business Email ကို ကျွန်တော်တို့ OTAS Tech Solutions မှာ အပ်နှံလိုက်ပါ။",
     image: "/images/image49.png",
   },
   {

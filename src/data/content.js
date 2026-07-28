@@ -4,7 +4,7 @@ export const content = {
     links: [
       { label: "OTAS အကြောင်း", href: "/about" },
       { label: "ရနိုင်တဲ့ Service များ", href: "/services" },
-      { label: "ပ‌ရောဂျက်များ", href: "/projects" },
+      // { label: "ပ‌ရောဂျက်များ", href: "/projects" },
       { label: "လုပ်ငန်းရှင်များ", href: "/clients" },
       // { label: "ဆက်သွယ်ဆွေးနွေးမယ်", href: "/contact" },
     ],
@@ -73,7 +73,7 @@ export const content = {
         company: "International Focus Myanmar",
         logo: "/images/logo-intl-focus.png",
         description:
-          "လုပ်ငန်းတာဝန်များကို စနစ်တကျ လုပ်ဆောင် စီမံခန့်ခွဲ့ပေးပြီး အချက်လက်များသိမ်းဆည်းပေးသော စိမံခန်ခွဲ့ရေး Software",
+          "လုပ်ငန်းတာဝန်များကို စနစ်တကျ လုပ်ဆောင် စီမံခန့်ခွဲ့ပေးပြီး အချက်လက်များသိမ်းဆည်းပေးသော စီမံခန့်ခွဲရေး Software",
         image: "/images/casethree.png",
         accentColor: "#N2E8DZ",
       },
@@ -91,7 +91,7 @@ export const content = {
         company: "OK GROUP OF COMPAINES",
         logo: "/images/logo-okgroup.png",
         description:
-          "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Portfolio နှင့် Dash Board",
+          "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Portfolio နှင့် DashBoard",
         image: "/images/casetwo.png",
         //         accentColor: "#034D7E",
       },
@@ -319,7 +319,7 @@ export const content = {
           step: "နောက်ဆုံးအဆင့်",
           title: "လုပ်ငန်းရှင်လက်ထဲ လက်လွဲပေးမယ်",
           description:
-            "အိုတက်စ်အနေနဲ့ စိတ်ချရတဲ့ စမ်းသပ်မှုတွေ လုပ်ပြီးတဲ့နောက် နည်းပညာအသုံးပြုရတဲ့ နည်းလမ်းတွေ သတိထားရတဲ့ အချက်တွေကို လက်တွေ့ကူညီ ပြသပေးပြီး လုပ်ငန်းရှင်လက်ထဲ လွဲပြောင်းပေးပါတယ်",
+            "အိုတက်စ်အနေနဲ့ စိတ်ချရတဲ့ စမ်းသပ်မှုတွေ လုပ်ပြီးတဲ့နောက် နည်းပညာအသုံးပြုရတဲ့ နည်းလမ်းတွေ သတိထားရတဲ့ အချက်တွေကို လက်တွေ့ကူညီ ပြသပေးပြီး လုပ်ငန်းရှင်လက်ထဲ လွှဲပြောင်းပေးပါတယ်",
         },
         {
           step: "အပိုအဆင့်",
@@ -453,7 +453,7 @@ export const content = {
     quickLinks: [
       { label: "OTAS အကြောင်း", href: "/about" },
       { label: "ရနိုင်တဲ့ Service များ", href: "/services" },
-      { label: "ပ‌ရောဂျက်များ", href: "/projects" },
+      // { label: "ပ‌ရောဂျက်များ", href: "/projects" },
       { label: "လုပ်ငန်းရှင်များ", href: "/clients" },
     ],
     social: [

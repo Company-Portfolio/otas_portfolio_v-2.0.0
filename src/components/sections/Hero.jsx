@@ -17,7 +17,7 @@ function Hero({ title, subtitle }) {
 
                     <div className="absolute inset-0 pt-16 md:pt-20 flex flex-col items-start justify-center px-20">
                         {title && (
-                            <h1 className="text-white font-aj11 leading-[2] text-2xl md:text-4xl lg:text-[64px] drop-shadow-md w-[57%]">
+                            <h1 className="text-white font-aj11 leading-[2] text-2xl md:text-4xl lg:text-[64px] drop-shadow-md w-[65%]">
                                 {title}
                             </h1>
                         )}

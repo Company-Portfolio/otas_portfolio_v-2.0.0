@@ -74,11 +74,11 @@ export function Navbar() {
 
           <div className="flex items-center gap-6 xl:gap-8">
             <div className="hidden lg:flex items-center gap-6 xl:gap-8">
-              <div className="flex items-center gap-1 text-[14px] md:text-[15px] font-semibold text-slate-700 hover:text-primary transition-colors cursor-pointer font-aj11">
+              {/* <div className="flex items-center gap-1 text-[14px] md:text-[15px] font-semibold text-slate-700 hover:text-primary transition-colors cursor-pointer font-aj11">
                 <Globe className="h-4 w-4" />
                 <span>{content.nav.language.code}</span>
                 <ChevronDown className="h-3.5 w-3.5 text-slate-400" />
-              </div>
+              </div> */}
 
               {/* Nav Links */}
               {content.nav.links.map((link) => (

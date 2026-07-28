@@ -1,7 +1,17 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { content } from "@/data/content"
 
 export function Footer() {
+  const location = useLocation();
+  const isActive = (href) => location.pathname === href;
+
+  const handleLinkClick = (e, href) => {
+    if (isActive(href)) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="bg-white pt-16 pb-8 border-t border-gray-100">
       <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
@@ -9,14 +19,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-6 pb-12">
 
           <div className="md:col-span-6 space-y-5">
-            <h2 className="font-aj11 lg:text-[64px] md:text-[40px] text-primary leading-tight">
+            <h2 className="font-aj11 xl:text-[64px] md:text-[40px] text-primary leading-tight">
               {content.footer.cta}
             </h2>
 
             <div className="space-y-2 pt-2">
               <a
                 href={`mailto:${content.footer.contact.email}`}
-                className="block font-sans text-xl lg:text-[32px] md:text-2xl text-primary font-semibold"
+                className="block font-sans text-xl xl:text-[32px] md:text-2xl text-primary font-semibold"
               >
                 {content.footer.contact.email}
               </a>
@@ -25,7 +35,7 @@ export function Footer() {
 
               <a
                 href={`tel:${content.footer.contact.phone}`}
-                className="block font-sans text-xl lg:text-[32px] md:text-2xl text-primary font-semibold"
+                className="block font-sans text-xl xl:text-[32px] md:text-2xl text-primary font-semibold"
               >
                 {content.footer.contact.phone}
               </a>
@@ -77,7 +87,11 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="font-aj11 text-sm md:text-base text-gray-500 hover:text-primary transition-colors duration-150"
+                    onClick={(e) => handleLinkClick(e, link.href)}
+                    className={`font-aj11 text-sm md:text-base transition-colors duration-150 ${isActive(link.href)
+                      ? "text-primary font-semibold"
+                      : "text-gray-500 hover:text-primary"
+                      }`}
                   >
                     {link.label}
                   </Link>

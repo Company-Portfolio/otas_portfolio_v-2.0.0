@@ -107,11 +107,11 @@ function Contact() {
                                             onChange={(e) => setUserRegistration({ ...userRegistration, serviceType: e.target.value })}
                                         >
                                             <option value="" className='text-slate-900'>Service အမျိုးအစား ရွေးချယ်မယ်</option>
-                                            <option value="Business Portfolio Website">Business Portfolio Website</option>
-                                            <option value="Business Email">Business Email</option>
-                                            <option value="AI Agent Automation">AI Agent Automation</option>
+                                            <option value="Website Development">Business Portfolio Website</option>
+                                            <option value="Other">Business Email</option>
+                                            <option value="AI Agent">AI Agent Automation</option>
                                             <option value="POS System">POS System</option>
-                                            <option value="Customize Software">Customize Software</option>
+                                            <option value="Software Development">Customize Software</option>
                                         </select>
                                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">
                                             {/* <svg className="fill-current h-4 w-4" xmlns="" viewBox="0 0 20 20">
@@ -158,7 +158,7 @@ function Contact() {
                                 ဆက်သွယ်မေးမြန်းလို့ရပါတယ်
                             </h2>
                             <p className="text-slate-800 lg:text-[24px] sm:text-lg md:text-[20px] font-bold font-myanmar leading-relaxed max-w-xl w-[90%]">
-                                လုပ်ငန်းရှင်တွေအနေနဲ့ မိမိရဲ့ လုပ်ငန်းကိုရဲ့ အခက်အခဲတွေကို နည်းပညာနဲ့ ဖြေရှင်းဖို့အတွက် အိုတက်စ်မှာ ရုံးချိန်အတွင်း ဆက်သွယ်စုံစမ်းလို့ရပါတယ်
+                                လုပ်ငန်းရှင်တွေအနေနဲ့ မိမိတို့လုပ်ငန်းရဲ့ အခက်အခဲတွေကို နည်းပညာနဲ့ ဖြေရှင်းဖို့အတွက် အိုတက်စ်မှာ ရုံးချိန်အတွင်း ဆက်သွယ်စုံစမ်းလို့ရပါတယ်
                             </p>
                             <div className="pt-2">
                                 <p className="text-2xl sm:text-3xl md:text-[38px] font-extrabold text-primary font-aj11 tracking-wide">

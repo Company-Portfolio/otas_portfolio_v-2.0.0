@@ -40,7 +40,7 @@ export function Clients() {
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
-          <h2 className="text-center mt-20 font-bold font-myanmar lg:text-[48px] md:text-[36px] text-[22px] w-full text-primary leading-tight md:leading-normal">
+          <h2 className="text-center mt-20 font-bold font-myanmar text-[22px] md:text-[30px] lg:text-[36px] xl:text-[40px] 2xl:text-[44px]  w-full text-primary leading-tight md:leading-normal">
             <motion.span variants={fadeInUp} className="block">
               အိုတက်စ်အနေနဲ့ ၄ နှစ်တာ ကာလအတွင်း မတူညီတဲ့
             </motion.span>
@@ -48,7 +48,7 @@ export function Clients() {
               စီးပွားရေး အမျိုးအစား ၆ မျိုးထဲမှ လုပ်ငန်းပေါင်း ၂၀ ကျော်ရဲ့
             </motion.span>
             <motion.span variants={fadeInUp} className="block">
-              အခက်အနေတွေကို တာဝန်ယူ ကူညီဖြေရှင်းပေးနိုင်ခဲ့ပါတယ်
+              အခက်အခဲတွေကို တာဝန်ယူ ကူညီဖြေရှင်းပေးနိုင်ခဲ့ပါတယ်
             </motion.span>
           </h2>
         </motion.div>
