@@ -59,7 +59,7 @@ function Contact() {
             </section>
 
             {/* Form Section */}
-            <section className="py-16 md:py-24 select-none w-full relative z-10 -mt-10 md:-mt-28 lg:-mt-40">
+            <section className="py-16 md:py-24 select-none w-full relative z-10 -mt-10 xl:-mt-40">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
