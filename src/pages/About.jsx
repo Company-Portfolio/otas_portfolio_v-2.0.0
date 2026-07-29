@@ -30,7 +30,11 @@ export function About() {
     <main className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="w-full relative">
-        <Hero images={content.about.hero.image} title={content.heroImg.aboutTitle} />
+        <Hero images={content.about.hero.image} title={
+          <>
+            လူကြီးမင်းတို့ရဲ့ လုပ်ငန်းအခက်အခဲတွေကို <br />နည်းပညာနဲ့ ကူညီ‌ဖြေရှင်းပေးမဲ့ အိုတက်စ်
+          </>
+        } />
 
         {/* Entry Fade Animation for Main Hero Image */}
         {/* <motion.div
@@ -165,7 +169,7 @@ export function About() {
           <div className="space-y-12 text-center">
             <motion.h2
               variants={fadeInUp}
-              className="text-2xl md:text-4xl text-primary font-aj11 tracking-wide mb-12 text-gradient py-2"
+              className="text-2xl md:text-4xl text-primary font-aj11 tracking-wide mb-12 py-2"
             >
               {content.about.clientHelp.title}
             </motion.h2>
@@ -206,7 +210,7 @@ export function About() {
           <div className="space-y-12 text-center">
             <motion.h2
               variants={fadeInUp}
-              className="text-2xl md:text-4xl text-primary font-aj11 tracking-wide mb-12 text-gradient py-2"
+              className="text-2xl md:text-4xl text-primary font-aj11 tracking-wide mb-12 py-2"
             >
               {content.about.partners.title}
             </motion.h2>

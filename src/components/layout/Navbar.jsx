@@ -174,11 +174,11 @@ export function Navbar() {
 
           <div className="flex flex-col gap-4 py-2 text-center">
             {/* Language Selector */}
-            <button className="flex items-center justify-center gap-2 text-[15px] font-bold text-slate-800 py-2 border-b border-slate-50">
+            {/* <button className="flex items-center justify-center gap-2 text-[15px] font-bold text-slate-800 py-2 border-b border-slate-50">
               <Globe className="h-4 w-4 text-slate-500" />
               <span className="font-myanmar">{content.nav.language.code}</span>
               <ChevronDown className="h-3 w-3 text-slate-400" />
-            </button>
+            </button> */}
 
             {/* Nav Links */}
             {content.nav.links.map((link) => (

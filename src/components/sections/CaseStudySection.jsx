@@ -7,7 +7,7 @@ export function CaseStudySection() {
     <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)] bg-white">
       <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
         <motion.h2
-          className="font-aj11 text-center text-3xl md:text-4xl text-gradient mb-[var(--heading-mb)]"
+          className="font-aj11 text-center text-3xl md:text-4xl text-primary mb-[var(--heading-mb)]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}

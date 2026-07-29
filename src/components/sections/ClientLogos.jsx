@@ -16,7 +16,7 @@ export function ClientLogos() {
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
         >
-          {content.clients.title || "အိုတက်စ် နှင့် လက်တွဲထားသော လုပ်ငန်းများ"}
+          {"အိုတက်စ် နှင့် လက်တွဲထားသော လုပ်ငန်းများ"}
         </motion.h2>
 
         <motion.div

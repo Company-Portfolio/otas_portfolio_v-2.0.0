@@ -29,7 +29,10 @@ export function Clients() {
   return (
     <main className="overflow-x-hidden">
       {/* Hero Section */}
-      <Hero images={content.clients.banner} title={content.heroImg.businessPartner} className="w-full" />
+      <Hero images={content.clients.banner} title={<span>
+        လုပ်ငန်းရှင်တွေရဲ့အောင်မြင်မှုက<br />
+        အိုတက်စ်ရဲ့ အောင်မြင်မှုနဲ့ ထပ်တူကျပါတယ်
+      </span>} className="w-full" />
 
       {/* Highlight Message Section */}
       <section>

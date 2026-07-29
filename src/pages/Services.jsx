@@ -45,7 +45,9 @@ export function Services() {
   return (
     <main className="w-full bg-white">
       {/* Hero Section */}
-      <Hero images={content.service.banner} title={content.heroImg.serviceTitle} />
+      <Hero images={content.service.banner} title={<>
+        အိုတက်စ်က ကူညီဆောင်ရွက်ပေးနေတဲ့ <br /> နည်းပညာဆိုင်ရာ Services များ
+      </>} />
 
       {serviceDetails.map((service) => {
 
