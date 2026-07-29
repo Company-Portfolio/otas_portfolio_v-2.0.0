@@ -24,27 +24,29 @@ export function CTASection() {
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
-          {content.cta.cards.map((card) => (
+          {content.cta.cards.map((card, index) => (
             <motion.div
               key={card.id}
               className="bg-white rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow text-primary"
               variants={fadeInUp}
             >
               <div className="p-6 flex flex-col items-center w-full">
-                <h3 className="w-full lg:w-[78%] font-aj11 lg:text-[40px] text-foreground mb-6 leading-[2] text-primary text-center">
+                <h3 className="w-full lg:w-[100%] font-aj11 lg:text-[40px] text-foreground mb-6 leading-[2] text-primary text-center">
                   {card.title}
                 </h3>
                 <div className="flex flex-col sm:flex-row w-full justify-between lg:w-[420px] gap-4">
-                  <Button
-                    size="lg"
-                    className="text-white py-3 font-aj11 bg-primary hover:bg-primary/90 flex-1 cursor-pointer"
-                  >
-                    {card.cta1}
-                  </Button>
+                  {index == 1 && (
+                    <Button
+                      size="lg"
+                      className="text-white text-[16px] lg:text-[20px] py-3 font-aj11 bg-primary hover:bg-primary/90 flex-1 cursor-pointer"
+                    >
+                      {card.cta1}
+                    </Button>
+                  )}
                   <Button
                     size="lg"
                     variant="outline"
-                    className="font-aj11 py-3 flex-1 cursor-pointer"
+                    className="font-aj11 text-[16px] lg:text-[20px] py-3 flex-1 cursor-pointer border border-primary"
                   >
                     {card.cta2}
                   </Button>

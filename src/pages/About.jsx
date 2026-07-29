@@ -1,7 +1,8 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { CardContent } from "@/components/ui/card"
 import { content } from "@/data/content"
 import Hero from "@/components/sections/Hero"
 import { motion } from "framer-motion";
+import { TestimonialSection } from "../components/sections/TestimonialSection";
 
 // 💡 ၁။ Framer Motion ကို Import ယူခြင်း
 
@@ -32,7 +33,7 @@ export function About() {
         <Hero images={content.about.hero.image} title={content.heroImg.aboutTitle} />
 
         {/* Entry Fade Animation for Main Hero Image */}
-        <motion.div
+        {/* <motion.div
           className="w-full rounded-2xl mx-auto max-w-5xl px-4 mt-10"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -43,7 +44,7 @@ export function About() {
             alt="About Hero"
             className="w-full h-full object-cover object-center"
           />
-        </motion.div>
+        </motion.div> */}
       </section>
 
       {/* Journey Stats Section */}
@@ -137,11 +138,8 @@ export function About() {
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
-          <motion.p variants={fadeInUp} className="font-aj11 text-primary lg:text-[32px] md:text-[24px] sm:text-[24px] text-center">
-            {content.about.helpCustomers.title}
-          </motion.p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-10 w-full px-2">
+          <motion.div variants={fadeInUp} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-10 w-full px-2">
             {content.about.helpCustomers.image.map((image, index) => (
               <motion.img
                 key={index}
@@ -151,62 +149,84 @@ export function About() {
                 className="w-full h-full object-cover rounded-md"
               />
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       </section>
 
       {/* Client help & Partner Brands Section */}
-      <section className="py-12 md:py-16 bg-white select-none">
+      <section className="py-16 md:py-24 bg-white select-none">
         <motion.div
-          className="mx-auto max-w-6xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)] space-y-16"
+          className="mx-auto max-w-6xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
         >
-          {/* Client Help Sub-section */}
-          <div className="space-y-8 text-center">
-            <motion.h2 variants={fadeInUp} className="text-xl md:text-2xl text-primary font-aj11 tracking-wide">
-              {content.about.clientHelp?.title || "အိုတက်စ်မှ ကူညီဖြေရှင်းပေးထားတဲ့ လုပ်ငန်းများ"}
+          <div className="space-y-12 text-center">
+            <motion.h2
+              variants={fadeInUp}
+              className="text-2xl md:text-4xl text-primary font-aj11 tracking-wide mb-12 text-gradient py-2"
+            >
+              {content.about.clientHelp.title}
             </motion.h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-10 items-center justify-center">
-              {content.clients.items.slice(0, 5).map((client) => (
-                <motion.div key={client.id} variants={fadeInUp} className="flex flex-col items-center justify-center text-center space-y-3 group">
-                  <div className="h-12 md:h-16 w-full flex items-center justify-center">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-16 items-start justify-center">
+              {content.about.clientHelp.items.map((client) => (
+                <motion.div
+                  key={client.id}
+                  variants={fadeInUp}
+                  className="flex flex-col items-center justify-center text-center space-y-4 group"
+                >
+                  <div className="h-16 md:h-20 w-full flex items-center justify-center">
                     <img
                       src={client.logo}
                       alt={client.name}
-                      className="max-h-full max-w-[80%] object-contain"
+                      className="max-h-full max-w-[80%] object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <p className="lg:text-[12px] md:text-xs font-semibold text-slate-800 tracking-wide font-sans uppercase">
+                  <p className="text-[11px] md:text-[13px] font-bold text-gray-800 tracking-wide font-sans uppercase leading-tight max-w-[160px]">
                     {client.name}
                   </p>
                 </motion.div>
               ))}
             </div>
           </div>
+        </motion.div>
+      </section>
 
-          {/* Partner Brands Sub-section */}
-          <div className="space-y-8 text-center">
-            <motion.h2 variants={fadeInUp} className="text-xl md:text-2xl text-primary tracking-wide font-aj11">
-              {content.about.clientPartner?.title || "အိုတက်စ်နဲ့ လက်တွဲထားသော လုပ်ငန်းများ"}
+      {/* Partners Section */}
+      <section className="py-16 bg-white select-none border-t border-gray-100">
+        <motion.div
+          className="mx-auto max-w-6xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={staggerContainer}
+        >
+          <div className="space-y-12 text-center">
+            <motion.h2
+              variants={fadeInUp}
+              className="text-2xl md:text-4xl text-primary font-aj11 tracking-wide mb-12 text-gradient py-2"
+            >
+              {content.about.partners.title}
             </motion.h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-10 items-center justify-center">
-              {/* 💡 ညီလေးရဲ့ ကုဒ်အသစ်ထဲက content.clientsLogo.items ကို မပြောင်းလဲဘဲ သုံးပေးထားပါတယ် */}
-              {content.clientsLogo.items.slice(5, 10).map((client) => (
-                <motion.div key={client.id} variants={fadeInUp} className="flex flex-col items-center justify-center text-center space-y-3 group">
-                  <div className="h-12 md:h-16 w-full flex items-center justify-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-16 items-start justify-center max-w-4xl mx-auto">
+              {content.about.partners.items.map((partner) => (
+                <motion.div
+                  key={partner.id}
+                  variants={fadeInUp}
+                  className="flex flex-col items-center justify-center text-center space-y-4 group"
+                >
+                  <div className="h-16 md:h-20 w-full flex items-center justify-center">
                     <img
-                      src={client.logo}
-                      alt={client.name}
-                      className="max-h-full max-w-[80%] object-contain"
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="max-h-full max-w-[80%] object-contain group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
-                  <p className="lg:text-[12px] md:text-xs font-semibold text-slate-800 tracking-wide font-sans uppercase">
-                    {client.name}
+                  <p className="text-[11px] md:text-[13px] font-bold text-gray-800 tracking-wide font-sans uppercase leading-tight max-w-[160px]">
+                    {partner.name}
                   </p>
                 </motion.div>
               ))}
@@ -216,72 +236,7 @@ export function About() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)] bg-white select-none">
-        <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
-
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:text-[64px] md:text-[40px] sm:text-[32px] mb-12 font-aj11 text-slate-900 text-center"
-          >
-            {content.about.testimonials.title}
-          </motion.h2>
-
-          {/* Testimonials Cards Grid */}
-          <motion.div
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-          >
-            {content.about.testimonials.items.map((testimonial) => (
-              <motion.div
-                key={testimonial.id}
-                variants={fadeInUp}
-                whileHover={{ y: -8, transition: { duration: 0.2, ease: "easeInOut" } }}
-                className="h-full"
-              >
-                <Card className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden flex flex-col justify-between p-5 h-full transition-shadow duration-300 hover:shadow-md">
-                  <div>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center overflow-hidden border border-slate-100 shrink-0">
-                        <img
-                          src={testimonial.logo}
-                          alt=""
-                          className="w-full h-full object-contain p-1"
-                        />
-                      </div>
-                      <div className="text-left">
-                        <h3 className="text-sm font-bold text-slate-900 font-myanmar leading-tight">
-                          {testimonial.name}
-                        </h3>
-                        <p className="text-[10px] md:text-xs font-bold text-slate-400 font-myanmar uppercase mt-0.5 tracking-wider">
-                          {testimonial.position}
-                        </p>
-                      </div>
-                    </div>
-
-                    <p className="text-slate-800 text-sm md:text-base font-aj11 leading-relaxed text-left mb-5 lg:text-[28px]">
-                      {testimonial.quote}
-                    </p>
-                  </div>
-
-                  <div className="w-full aspect-[4/3] rounded-xl overflow-hidden bg-slate-100 mt-auto">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="h-full w-full object-cover object-center"
-                    />
-                  </div>
-                </Card>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+      <TestimonialSection />
     </main>
   )
 }

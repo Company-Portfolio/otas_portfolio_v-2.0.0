@@ -8,6 +8,13 @@
 }
 
 @font-face {
+  font-family: 'manropeLight';
+  src: url('/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'PoppinsLocal';
   src: url('/fonts/Poppins-Regular.ttf') format('truetype');
   font-weight: 400;
@@ -26,48 +33,48 @@
   --color-primary: #007FFF;
   --color-primary-dark: #0066CC;
   --color-primary-light: #3399FF;
-  
+
   /* Background Colors */
   --color-background: #FFFFFF;
   --color-background-light: #F9F8F8;
   --color-background-dark: #0D1B2A;
-  
+
   /* Text Colors */
-  --color-foreground: #0D1B2A;
+  --color-foreground: #111827;
   --color-foreground-light: #111827;
   --color-foreground-muted: #5D5D5D;
   --color-foreground-subtle: #131313;
-  
+
   /* Border Colors */
   --color-border: #D9D9D9;
   --color-border-light: #E5E7EB;
-  
+
   /* Card Colors */
   --color-card: #FFFFFF;
   --color-card-foreground: #0D1B2A;
-  
+
   /* Accent Colors */
   --color-accent-blue: #A8DAFF;
   --color-accent-green: #3DBB47;
   --color-accent-green-light: #B3EFBD;
   --color-accent-yellow: #FFE299;
   --color-accent-orange: #FFD3A8;
-  
+
   /* Status Colors */
   --color-success: #3DBB47;
   --color-warning: #FFE299;
   --color-destructive: #DC2626;
   --color-destructive-foreground: #FFFFFF;
-  
+
   /* Muted Colors */
   --color-muted: #F3F4F6;
   --color-muted-foreground: #6B7280;
-  
+
   /* Font Family */
   --font-sans: 'PoppinsLocal', 'Poppins', system-ui, sans-serif;
   --font-myanmar: 'PadaukLocal', 'Padauk', sans-serif;
   --font-heading: 'PadaukLocal', 'Padauk', sans-serif;
-  
+
   /* Spacing Variables */
   --section-py: 4rem;
   --section-py-lg: 6rem;
@@ -82,13 +89,13 @@
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-full: 9999px;
-  
+
   /* Shadows */
   --shadow-sm: 0px 2px 2px 0px rgba(0, 0, 0, 0.02), 0px 3px 5px 0px rgba(0, 0, 0, 0.04);
   --shadow-md: 0px 2px 6px 0px rgba(0, 0, 0, 0.1), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
   --shadow-xl: 0px 8px 24px 0px rgba(0, 0, 0, 0.2);
-  
+
   /* Glass Effect */
   --backdrop-blur: 4px;
 }
@@ -105,24 +112,24 @@
     -webkit-backdrop-filter: blur(8px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   }
-  
+
   .glass-dark {
     background: rgba(13, 27, 42, 0.8);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
   }
-  
+
   .text-gradient {
     background: linear-gradient(180deg, #007FFF 0%, #004C99 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-  
+
   .bg-gradient-blue {
     background: linear-gradient(180deg, #007FFF 0%, #004C99 100%);
   }
-  
+
   .bg-gradient-dark {
     background: linear-gradient(270deg, rgba(106, 106, 106, 1) 0%, rgba(34, 34, 34, 0.13) 100%);
   }
@@ -131,6 +138,7 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
   }
@@ -141,14 +149,19 @@
   * {
     border-color: var(--color-border);
   }
-  
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-myanmar);
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-heading);
     color: var(--color-foreground);
   }

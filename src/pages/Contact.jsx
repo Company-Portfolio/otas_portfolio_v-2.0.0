@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import axios from "axios"
 import toast, { Toaster } from 'react-hot-toast'
 import Hero from '../components/sections/Hero'
@@ -157,12 +157,15 @@ function Contact() {
                             <h2 className="lg:text-[64px] sm:text-5xl md:text-[56px] lg:text-[60px] text-slate-950 font-aj11 leading-tight tracking-tight">
                                 ဆက်သွယ်မေးမြန်းလို့ရပါတယ်
                             </h2>
-                            <p className="text-slate-800 lg:text-[24px] sm:text-lg md:text-[20px] font-bold font-myanmar leading-relaxed max-w-xl w-[90%]">
-                                လုပ်ငန်းရှင်တွေအနေနဲ့ မိမိတို့လုပ်ငန်းရဲ့ အခက်အခဲတွေကို နည်းပညာနဲ့ ဖြေရှင်းဖို့အတွက် အိုတက်စ်မှာ ရုံးချိန်အတွင်း ဆက်သွယ်စုံစမ်းလို့ရပါတယ်
+                             <p className="text-slate-800 lg:text-[24px] sm:text-lg md:text-[20px] font-bold font-myanmar leading-relaxed max-w-xl w-[90%]">
+                                လုပ်ငန်းရှင်တွေအနေနဲ့ မိမိရဲ့ လုပ်ငန်းကိုရဲ့ အခက်အခဲတွေကို နည်းပညာနဲ့ ဖြေရှင်းဖို့အတွက် အိုတက်စ်မှာ ရုံးချိန်အတွင်း ဆက်သွယ်စုံစမ်းလို့ရပါတယ်
                             </p>
-                            <div className="pt-2">
+                            <div className="space-y-4 pt-2">
                                 <p className="text-2xl sm:text-3xl md:text-[38px] font-extrabold text-primary font-aj11 tracking-wide">
-                                    ဖုန်းနံပါတ် : <span className="font-aj11 select-all">09 970 577 147</span>
+                                    ရုံးချိန် &nbsp;&nbsp;&nbsp;: မနက် 9:30 – ညနေ 5:00
+                                </p>
+                                <p className="text-2xl sm:text-3xl md:text-[38px] font-extrabold text-primary font-aj11 tracking-wide">
+                                    ဖုန်းနံပါတ် : <span className="select-all">09 95 120 7795</span>
                                 </p>
                             </div>
                         </div>

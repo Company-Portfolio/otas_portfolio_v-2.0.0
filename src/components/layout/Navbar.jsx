@@ -23,52 +23,73 @@ export function Navbar() {
   const location = useLocation();
   const isActive = (href) => location.pathname === href;
 
+  const isHomePage = location.pathname === "/";
+
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
 
-      setScrolled(currentScrollY > 20);
+          // Only update scrolled state if it changes
+          const isScrolled = currentScrollY > 20;
+          setScrolled((prev) => (prev !== isScrolled ? isScrolled : prev));
 
-      if (currentScrollY < 20) {
-        setIsVisible(true);
-      } else if (currentScrollY > lastScrollY) {
-        setIsVisible(false);
-      } else if (currentScrollY < lastScrollY) {
-        setIsVisible(true);
+          // Only update visibility if it changes
+          if (currentScrollY < 20) {
+            setIsVisible(true);
+          } else if (currentScrollY > lastScrollY) {
+            setIsVisible((prev) => (prev !== false ? false : prev));
+          } else if (currentScrollY < lastScrollY) {
+            setIsVisible((prev) => (prev !== true ? true : prev));
+          }
+
+          setLastScrollY(currentScrollY);
+          ticking = false;
+        });
+        ticking = true;
       }
-
-      setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   return (
     <motion.nav
-      className="fixed top-0 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-8 py-4 bg-[#F9F8F8]"
-      initial={{ y: -100, opacity: 0 }}
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 w-full px-4 sm:px-6 lg:px-20 py-4 transition-all duration-300",
+        isHomePage ? "bg-white" : "bg-gradient-to-r from-[#0B5FB2] to-[#0B5FB2]"
+      )}
+      initial={{ y: -120, opacity: 0 }}
       animate={{
         y: isVisible ? 0 : -120,
         opacity: isVisible ? 1 : 0,
       }}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 30,
+        mass: 0.8
+      }}
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto ">
         <div
           className={cn(
-            "bg-white transition-all duration-300 px-4 md:px-6 lg:px-8",
-            "flex h-16 md:h-20 items-center justify-between",
+            "bg-white transition-all duration-300 px-4 md:px-6 lg:px-8 rounded-2xl",
+            "flex h-16 md:h-[80px] items-center justify-between",
             scrolled
-              ? "shadow-md border-b border-x border-slate-100/80"
-              : "shadow-sm border-b border-x border-slate-100",
+              ? "shadow-md border border-slate-100/80"
+              : "shadow-sm border border-slate-100",
           )}
         >
           <Link to="/" className="flex items-center shrink-0">
             <img
               src={content.nav.logo}
               alt="OTAS Logo"
-              className="h-8 md:h-12 w-auto object-contain"
+              className="h-8 md:h-18 w-auto object-contain"
             />
           </Link>
 

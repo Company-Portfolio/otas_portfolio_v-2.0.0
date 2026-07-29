@@ -4,10 +4,10 @@ import { fadeInUp, staggerContainer } from "@/utils/animations";
 
 export function CaseStudySection() {
   return (
-    <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)]">
+    <section className="py-[var(--section-py)] lg:py-[var(--section-py-lg)] bg-white">
       <div className="mx-auto max-w-7xl px-[var(--container-px)] sm:px-[var(--container-px-sm)] lg:px-[var(--container-px-lg)]">
         <motion.h2
-          className="font-aj11 text-center text-primary text-3xl md:text-4xl text-foreground mb-[var(--heading-mb)]"
+          className="font-aj11 text-center text-3xl md:text-4xl text-gradient mb-[var(--heading-mb)]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -17,7 +17,7 @@ export function CaseStudySection() {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -26,39 +26,29 @@ export function CaseStudySection() {
           {content.caseStudies.items.map((study) => (
             <motion.div
               key={study.id}
-              className="group relative overflow-hidden rounded-xl border border-border bg-white hover:shadow-lg transition-all cursor-pointer"
+              className="group rounded-3xl border border-gray-100 bg-white p-6 hover:shadow-lg transition-all duration-300 cursor-pointer"
               variants={fadeInUp}
             >
-              {/* Card Content */}
-              <div className="px-6 py-4">
-                {/* Company Logo & Name */}
-                <div className="flex items-center gap-3 mb-4">
-                  <img
-                    src={study.logo}
-                    alt={study.company}
-                    className="h-8 w-8 object-contain"
-                  />
-                  <h3 className="font-semibold text-primary">
-                    {study.company}
-                  </h3>
-                </div>
-
-                {/* Description */}
-                <p className="h-[60px] text-[20px] text-muted-foreground mb-6 line-clamp-2 font-bold w-[95%]">
-                  {study.description}
-                </p>
-
-
+              {/* Logo / Image Box */}
+              <div className="w-full h-[260px] flex items-center justify-center p-8 bg-white mb-6 overflow-hidden">
+                <img
+                  src={study.logo}
+                  alt={study.company}
+                  className="max-h-full max-w-full object-contain group-hover:scale-[1.03] transition-transform duration-300"
+                />
               </div>
 
-              {/* Background Image */}
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={study.image}
-                  alt={study.company}
-                  className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" /> */}
+              {/* Text Content */}
+              <div className="px-1">
+                {/* Company Name */}
+                <h3 className="font-bold font-[manropeLight] text-gray-900 text-xl md:text-2xl mb-3">
+                  {study.company}
+                </h3>
+
+                {/* Description */}
+                <p className="text-[#111827] text-base lg:text-[20px] leading-relaxed">
+                  {study.description}
+                </p>
               </div>
             </motion.div>
           ))}

@@ -57,41 +57,41 @@ export const content = {
     ],
   },
   caseStudies: {
-    title: "အိုတက်စ်မှ ဖန်တီးပေးထားတဲ့ ပရောဂျက်များ",
+    title: "အိုတက်စ်မှ ဖန်တီးပေးထားတဲ့ ပရောဂျက်အချို့",
     items: [
       {
         id: 1,
         company: "UEDC Myanmar",
-        logo: "/images/logo-uedc.png",
+        logo: "/images/logo4.png",
         description:
-          "အော်ဒါ အလိုအလျောက်ကောက်ပြီး စာရင်းသွင်း စိီမံပေးတဲ့ လုပ်ငန်းသုံး အရောင်း Sale Bot",
+          "အလိုအလျောက် အော်ဒါကောက်ပြီး အလွယ်တကူ စီမံခန့်ခွဲနိုင်တဲ့ Software",
         image: "/images/caseone.png",
         //         accentColor: "#05C5C5",
       },
       {
         id: 2,
         company: "International Focus Myanmar",
-        logo: "/images/logo-intl-focus.png",
+        logo: "/images/logo (3).png",
         description:
-          "လုပ်ငန်းတာဝန်များကို စနစ်တကျ လုပ်ဆောင် စီမံခန့်ခွဲ့ပေးပြီး အချက်လက်များသိမ်းဆည်းပေးသော စီမံခန့်ခွဲရေး Software",
+          "လုပ်ငန်းလည်ပတ်မှု ပိုမိုလွယ်ကူမြန်ဆန်အောင်ပြုလုပ်ပြီး အချက်အလက်များကို စနစ်တကျ သိမ်းဆည်း ခန့်ခွဲပေးသော Software",
         image: "/images/casethree.png",
         accentColor: "#N2E8DZ",
       },
       {
         id: 3,
         company: "Live Code Myanmar",
-        logo: "/images/logo-livecode.png",
+        logo: "/images/logo (1).png",
         description:
-          "Live Sale မှ အော်ဒါများကို အလိုလျောက်‌ကောက်ခံပေးပြီး Live Saleတစ်ခုလုံးကို စိီမံခန့်ခွဲပေးတဲ့ Automation Software",
+          "Live Sale မှ အော်ဒါကို အလိုလျောက်ကောက်ခံပေးပြီး Live Saleတစ်ခုလုံးကို စီမံခန့်ခွဲပေးတဲ့ Automation Software",
         image: "/images/casefour.png",
         //         accentColor: "#FF5A5F",
       },
       {
         id: 4,
         company: "OK GROUP OF COMPAINES",
-        logo: "/images/logo-okgroup.png",
+        logo: "/images/logo (2).png",
         description:
-          "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Portfolio နှင့် DashBoard",
+          "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Website နှင့် Dash Board",
         image: "/images/casetwo.png",
         //         accentColor: "#034D7E",
       },
@@ -107,15 +107,13 @@ export const content = {
         cta1: "Auto Shop စမ်းသုံးကြည့်မယ်",
         cta2: "ဆက်သွယ်ဆွေးနွေးမယ်",
         image: "/images/Group-1.png",
-        image: "/images/Group-1.png",
         variant: "primary",
       },
       {
         id: 2,
-        title: "ဆိုင်ရှင်တွေကို စိတ်အေးရမဲ့ Online ဆိုင်ခွဲ Auto Shop",
+        title: "ဝန်ထမ်းနည်းနည်း ဘတ်ဂျတ်နည်းနည်းနဲ့ ဖွင့်နိုင်တဲ့ Online ဆိုင်ခွဲ Auto Shop",
         cta1: "အေအိုင်အေးဂျင့် စမ်းသုံးကြည့်မယ်",
         cta2: "ဆက်သွယ်ဆွေးနွေးမယ်",
-        image: "/images/image-6.png",
         image: "/images/image-6.png",
         variant: "secondary",
       },
@@ -241,7 +239,7 @@ export const content = {
         description:
           "လုပ်ငန်းသုံးအ‌ရောင်း စီမံခန့်ခွဲ‌ရေး software ဖြင့် အော်ဒါကောက် ကြန့်ကြာနေမှုပြသာနာကို ဖြေရှင်းပေးနိုင်ခဲ့ပါတယ်",
         cta1: "ဘယ်လိုပြောင်းလဲသွားလဲ ကြည့်မယ်",
-        image: "/images/uedc.png",
+        image: "/images/MEGA.png",
         variant: "primary",
       },
       {
@@ -275,8 +273,8 @@ export const content = {
       title: "အိုတက်စ်ရဲ့ ခရီးစဉ်",
       image: "/images/aboutcompany.png",
       stats: [
-        { label: "တိုးတက်ခဲ့တဲ့ ခရီးစဉ်", value: "၄ နှစ်ကြာ" },
-        { label: "ကူညီတိုင်ပင်ပေးထားသော", value: "လုပ်ငန်းရှင် 200" },
+        { label: "အိုတက်စ်ရဲ့ ခရီးစဉ်", value: "5 နှစ်ကြာ" },
+        { label: "ကူညီဆွေးနွေးပေးထားသော", value: "လုပ်ငန်းရှင် 200+" },
       ],
     },
     purpose: {
@@ -286,9 +284,9 @@ export const content = {
       image: "/images/image63.png",
     },
     process: {
-      title: "ဘာကြောင့် ရွေးချယ်သင့်လဲ",
+      title: "ဘာလို့ရွေးချယ်သင့်တာလဲ",
       description:
-        "အိုတက်စ်ရဲ့ အဓိက ရည်ရွယ်ချက်က လုပ်ငန်းရှင်တွေ ကြုံတွေ့နေရတဲ့ အခက်အခဲတွေကို အကုန်အကျအနည်းဆုံးနဲ့ အချိန်တိုအတွင်း ထိရောက်စွာဖြေရှင်းပေးနိုင်ဖို့ ဖြစ်ပါတယ်",
+        "အိုတက်စ်ရဲ့ အဓိက ရည်ရွယ်ချက်က လုပ်ငန်းရှင်တွေ ကြုံတွေနေရတဲ့ အခက်အခဲတွေကို နည်းပညာအသုံးပြုပြီး အထိရောက်ဆုံး ဖြေရှင်းပေးနိုင်ဖို့ ဖြစ်ပါတယ်",
       steps: [
         {
           step: "ပထမအဆင့်",
@@ -340,7 +338,37 @@ export const content = {
 
     clientHelp: {
       title: "အိုတက်စ်မှ ကူညီဖြေရှင်းပေးထားတဲ့ လုပ်ငန်းရှင်များ",
-      items: [{}],
+      items: [
+        { id: 1, name: "UEDC MYANMAR", logo: "/images/logo-uedc.png" },
+        { id: 2, name: "SUZUKI MEGA 6 CAR SHOWROOM", logo: "/images/MEGA.png" },
+        { id: 3, name: "INTERNATIONAL FOCUS", logo: "/images/logo-intl-focus.png" },
+        { id: 4, name: "FUNGLISH MAX", logo: "/images/funglish.png" },
+        { id: 5, name: "OK GROUP OF COMPAINES", logo: "/images/ok.png" },
+        { id: 6, name: "DRINKING MODE", logo: "/images/clientlogo/clientlogo (15).png" },
+        { id: 7, name: "GENERAL IMPEX", logo: "/images/clientlogo/clientlogo (14).png" },
+        { id: 8, name: "GOLDEN MYANMAR HUMAN RESOURCES", logo: "/images/clientlogo/clientlogo (13).png" },
+        { id: 9, name: "ME ME COSMETICS", logo: "/images/clientlogo/clientlogo (12).png" },
+        { id: 10, name: "TOP NOTCH", logo: "/images/clientlogo/clientlogo (11).png" },
+        { id: 11, name: "IMAS", logo: "/images/clientlogo/clientlogo (10).png" },
+        { id: 12, name: "KAUNG KADAY KYWAL CONSTRUCTION", logo: "/images/clientlogo/clientlogo (9).png" },
+        { id: 13, name: "GOLD MINE INTERNATIONAL CO.,LTD", logo: "/images/clientlogo/clientlogo (1).png" },
+        { id: 14, name: "SHWE PYI", logo: "/images/clientlogo/clientlogo (8).png" },
+        { id: 15, name: "KO MIN DIY STORE", logo: "/images/clientlogo/clientlogo (7).png" },
+        { id: 16, name: "HONGCHI", logo: "/images/clientlogo/clientlogo (6).png" },
+        { id: 17, name: "CHANGAN MYANMAR", logo: "/images/clientlogo/clientlogo (5).png" },
+        { id: 18, name: "AVENUE 101", logo: "/images/clientlogo/clientlogo (4).png" },
+        { id: 19, name: "LIQUOR PRO", logo: "/images/clientlogo/clientlogo (3).png" },
+        { id: 20, name: "168 SUCCESS REAL ESTATE AGENCY", logo: "/images/clientlogo/clientlogo (2).png" }
+      ],
+    },
+    partners: {
+      title: "အိုတက်စ်နဲ့ ပါတနာအဖြစ် လက်တွဲထားသော လုပ်ငန်းများ",
+      items: [
+        { id: 1, name: "DIGITAL SAW MARKETING AGENCY", logo: "/images/partaner/partanar (4).png" },
+        { id: 2, name: "MEDICAL EDUCATION GUILD", logo: "/images/partaner/partanar (3).png" },
+        { id: 3, name: "LIVE CODE MYANMAR", logo: "/images/partaner/partanar (2).png" },
+        { id: 4, name: "HEALTHY NARA", logo: "/images/partaner/partanar (1).png" }
+      ]
     },
     testimonials: {
       title: "အိုတက်စ်အပေါ် လုပ်ငန်းရှင်တွေရဲ့ စကားသံများ",
@@ -449,7 +477,7 @@ export const content = {
     cta: "အခုပဲ ဆက်သွယ်စုံစမ်းလိုက်ပါ",
     contact: {
       email: "info@otastechsolutions.com",
-      phone: "+959970577147",
+      phone: "09 95 120 7795",
     },
     address:
       "No(503), Building (1), 7 Mile Condo, Parami Road, Mayangone Township, Yangon",
@@ -467,9 +495,43 @@ export const content = {
     social: [
       { name: "Facebook", href: "#" },
       { name: "LinkedIn", href: "#" },
-      { name: "Twitter", href: "#" },
+      { name: "Viber", href: "#" },
     ],
     copyright: "© 2026 otastechsolutions.com, All right Reserved",
+  },
+
+  homeTestimonials: {
+    title: "အိုတက်စ်အပေါ် လုပ်ငန်းရှင်တွေရဲ့ စကားသံများ",
+    items: [
+      {
+        id: 1,
+        name: "ကိုကျော်မင်းထွန်း",
+        position: "MANAGING DIRECTOR / SUZUKI MEGA 6 MYANMAR",
+        quote: "ဆက်ဆံရေးကတော့ တကယ်ကောင်းပါတယ် မရှင်းတာလေးတွေ မေးလိုက်ရင်လည်း စိတ်ရှည်ရှည်နဲ့ သေသေချာချာရှင်းပြ ပေးတယ် လိုအပ်တာတွေ ရှိရင်လည်း အမြဲ ကူညီပေးတာ အရမ်းအဆင်ပြေတယ်။ ဒီတိုင်းလေး ကောင်းမွန်သော service နဲ့ဆို အများကြီး အောင်မြင်လာမှာ ပါ။ နောက်လည်း ဒီထက်မက တိုးတက်အောင်မြင်ပါစေလို့ ဆုမွန်ကောင်းတောင်းပေးပါတယ်။",
+        logo: "/images/logo (3).png"
+      },
+      {
+        id: 2,
+        name: "မဇင်မီမိထက်",
+        position: "(FOUNDER)/ ME ME COSMETICS",
+        quote: "OTAS Team က အမြဲစိတ်ရှည်ပြီး အဆင်ပြေ အောင် လုပ်ပေးပါတယ် ရှင့် အခုလုပ်ထားတဲ့ Customize Software လေး က အသုံးပြုရတာ အရမ်း အဆင်ပြေတယ်။ အလုပ်လုပ်ရတာ အရင်ကထက် ပိုမြန်သွားတယ်... Good Service",
+        logo: "/images/meme.png"
+      },
+      {
+        id: 3,
+        name: "ကိုမင်းလတ်",
+        position: "GENERAL MANAGER / OK GROUP OF COMPANIES",
+        quote: "စိတ်ရှည်ပေးတဲ့ အချက်ကတော့ တကယ်ကောင်းပါတယ် ခဏခဏ ပြင်ဆင်တာကို သေချာဆောင်ရွက်ပေးတယ် လိုအပ်တာတွေရှိရင်လည်း အမြဲကူညီပေးတာ အရမ်းအဆင်ပြေတယ်။ ဝန်ဆောင်မှုကို ကြယ်ငါးပွင့်အဆင့် ပေးချင်ပါတယ်။",
+        logo: "/images/ok.png"
+      },
+      {
+        id: 4,
+        name: "မခင်နွယ်ဦး",
+        position: "ADMIN EXECUTIVE / GOLDEN MYANMAR HR COMPANY",
+        quote: "OTAS Tech Solutions နှင့် အလုပ်လုပ်ရသည်မှာ Professional ကျပြီး အဖွဲ့သားများမှာ စိတ်ရှည် သလို Client လိုအပ်ချက် နှင့်ကိုက်ညီအောင် လုပ်ဆောင်ပေးနိုင်ပါသည်။",
+        logo: "/images/gl.png"
+      }
+    ]
   },
 
   heroImg: {

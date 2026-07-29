@@ -4,7 +4,7 @@
 // import { ArrowRight } from "lucide-react"
 import { content } from "@/data/content"
 import Hero from '@/components/sections/Hero'
-import SuccessRecord from "../components/sections/SuccessRecord"
+
 import { motion } from "framer-motion";
 
 export function Clients() {
@@ -101,10 +101,7 @@ export function Clients() {
         </motion.div>
       </section>
 
-      {/* Success Record Section */}
-      <section>
-        <SuccessRecord />
-      </section>
+
     </main>
   )
 }

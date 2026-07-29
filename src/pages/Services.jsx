@@ -6,9 +6,9 @@ import { content } from '@/data/content';
 const serviceDetails = [
   {
     id: 1,
-    title: "Business Portfolio",
-    subtitle: "လုပ်ငန်းရဲ့ ယုံကြည်မှုတိုးစေမယ့်",
-    description: "ယုံကြည်စိတ်ချရတဲ့ Business Website ရှိထားခြင်းက စစချင်း ဖောက်သည်အသစ်တွေ သင့်လုပ်ငန်းကို ဘယ်လိုမြင်သွားမလဲ ဆိုတဲ့ First Impression ကို ပိုမိုကောင်းမွန်စေမှာပါ ",
+    title: "Business Website",
+    subtitle: "လုပ်ငန်းကို ယုံကြည်မှုတိုးစေမဲ့",
+    description: "လုပ်ငန်းရှင်တွေရဲ့ လုပ်ငန်းအတွက် Branding နှင့် Customer များ ၊ အလုပ်လက်တွဲလုပ်ဆောင်မည့် စီးပွားရေး လုပ်ငန်းများ၏ ယုံကြည်မှု ခိုင်မာစေဖို့အတွက် လုပ်ငန်းများအတွက် Business Portfolio ရရှိမှာ ဖြစ်ပါတယ်",
     image: "/images/image.png",
   },
   {
@@ -28,17 +28,17 @@ const serviceDetails = [
   {
     id: 4,
     title: "Customize Software",
-    subtitle: "လုပ်ငန်းရဲ့ အခက်အခဲကို လွယ်လွယ်ကူကူ ဖြေရှင်းပေးမဲ့",
+    subtitle: "လုပ်ငန်းရဲ့ အခက်အနေကို လွယ်လွယ်ကူကူ ဖြေရှင်းပေးမဲ့",
     description: "သင့်လုပ်ငန်းလိုအပ်ချက်အလိုက် စနစ်တကျ ရေးဆွဲပေးထားတဲ့ Customized Software Development များသည် လုပ်ငန်းလည်ပတ်မှုကို ပိုမိုသွက်လက် စနစ်ကျစေပြီး ဒေတာ စီမံခန့်ခွဲမှုတွေကို အကောင်းဆုံး ကူညီပေးမှာ ဖြစ်ပါတယ်။",
     image: "/images/image4.png",
   },
 ]
 
 const commonBenefits = [
-  "လုပ်ငန်းသုံး Business Email အခမဲ့ (၁နှစ်စာ)",
-  "လုပ်ငန်းအလိုက် အခမဲ့ ယုံကြည်မှု",
-  "လုပ်ငန်းခြင်း စိတ်ချယုံကြည်မှု မြန်ဆန်ခြင်း",
-  "24/7 Digital ရုံးခန်းဝန်ဆောင်မှု",
+  "- လုပ်ငန်းသုံး Business Email အခမဲ့ (၁နှစ်စာ)",
+  "- လုပ်ငန်းပေါ် အမြင့်ဆုံး ယုံကြည်မှု",
+  "- လုပ်ငန်းခြင်း တိုက်ရိုက်ချိတ်ဆက်မှု မြန်ဆန်လာခြင်း",
+  "- 24/7 Digital ရုံးခန်းတစ်ခန်း",
 ]
 
 export function Services() {
@@ -47,7 +47,7 @@ export function Services() {
       {/* Hero Section */}
       <Hero images={content.service.banner} title={content.heroImg.serviceTitle} />
 
-      {serviceDetails.map((service, index) => {
+      {serviceDetails.map((service) => {
 
         const textVariants = {
           hidden: { opacity: 0, x: -40 },
@@ -104,8 +104,12 @@ export function Services() {
                     {service.description}
                   </p>
 
+                  <p className="text-slate-900 text-lg lg:text-[20px] font-bold font-aj11 pt-4">
+                    ဒီ Service ကိုအပ်နှံလိုက်ရုံနဲ့
+                  </p>
+
                   <motion.ul
-                    className="space-y-7 pt-4"
+                    className="space-y-7 pt-2"
                     variants={{
                       visible: { transition: { staggerChildren: 0.08 } }
                     }}
