@@ -21,14 +21,14 @@ const serviceDetails = [
   {
     id: 3,
     title: "AI Agent",
-    subtitle: "လုပ်ငန်းရဲ့ အချိန်ကို တိုးချဲ့ပေးမဲ့",
+    subtitle: "လုပ်ငန်းရဲ့အရှိန်ကို ၈ဆ မြှင့်တင်ပေးမဲ့",
     description: "AI သုံးခြင်းဟာ လုပ်ငန်းရှင်တွေအတွက် ပိုကောင်းမလား ပိုဆိုးမလား။ အလုပ်သမား အချိန်ကုန်သက်သာစေပြီး Accuracy ပိုမိုမြင့်မားစေကာ လုပ်ငန်းတွေကို အလိုအလျောက် ပိုမိုမြန်ဆန် စနစ်ကျစေမှာ ဖြစ်ပါတယ်။",
     image: "/images/image3.png",
   },
   {
     id: 4,
     title: "Customize Software",
-    subtitle: "လုပ်ငန်းရဲ့ အခက်အနေကို လွယ်လွယ်ကူကူ ဖြေရှင်းပေးမဲ့",
+    subtitle: "သင့်လုပ်ငန်းရဲ့အခက်အခဲကို တစ်ချက်တည်းနဲ့ ဖြေရှင်းပေးမဲ့",
     description: "သင့်လုပ်ငန်းလိုအပ်ချက်အလိုက် စနစ်တကျ ရေးဆွဲပေးထားတဲ့ Customized Software Development များသည် လုပ်ငန်းလည်ပတ်မှုကို ပိုမိုသွက်လက် စနစ်ကျစေပြီး ဒေတာ စီမံခန့်ခွဲမှုတွေကို အကောင်းဆုံး ကူညီပေးမှာ ဖြစ်ပါတယ်။",
     image: "/images/image4.png",
   },
@@ -97,7 +97,7 @@ export function Services() {
                     <p className="text-slate-900 lg:text-[40px] sm:text-xl md:text-2xl font-bold font-myanmar leading-tight">
                       {service.subtitle}
                     </p>
-                    <h2 className="lg:text-[40px] sm:text-4xl md:text-5xl font-bold text-slate-950 font-sans leading-none tracking-tight pt-3">
+                    <h2 className="lg:text-[40px] sm:text-4xl md:text-5x font-bold text-slate-950 font-PoppinsLocal pt-3">
                       {service.title}
                     </h2>
                   </div>

@@ -45,10 +45,10 @@ export function Clients() {
         >
           <h2 className="text-center mt-20 font-bold font-myanmar text-[22px] md:text-[30px] lg:text-[36px] xl:text-[40px] 2xl:text-[44px]  w-full text-primary leading-tight md:leading-normal">
             <motion.span variants={fadeInUp} className="block">
-              အိုတက်စ်အနေနဲ့ ၄ နှစ်တာ ကာလအတွင်း မတူညီတဲ့
+              အိုတက်စ်အနေနဲ့ ၅ နှစ်တာ ကာလအတွင်း မတူညီတဲ့
             </motion.span>
             <motion.span variants={fadeInUp} className="block">
-              စီးပွားရေး အမျိုးအစား ၆ မျိုးထဲမှ လုပ်ငန်းပေါင်း ၂၀ ကျော်ရဲ့
+              စီးပွားရေး အမျိုးအစား ၆ မျိုးထဲမှ လုပ်ငန်းပေါင်း ၄၀ ကျော်ရဲ့
             </motion.span>
             <motion.span variants={fadeInUp} className="block">
               အခက်အခဲတွေကို တာဝန်ယူ ကူညီဖြေရှင်းပေးနိုင်ခဲ့ပါတယ်
