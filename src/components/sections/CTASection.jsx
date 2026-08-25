@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { content } from "@/data/content";
 import { fadeInUp, staggerContainer } from "@/utils/animations";
@@ -39,16 +40,34 @@ export function CTASection() {
                     <Button
                       size="lg"
                       className="text-white text-[16px] lg:text-[20px] py-3 font-aj11 bg-primary hover:bg-primary/90 flex-1 cursor-pointer"
+                      asChild
                     >
-                      {card.cta1}
+                      <a
+                        href={card.cta1Link || "https://autoshopmm.com"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {card.cta1}
+                      </a>
                     </Button>
                   )}
                   <Button
                     size="lg"
                     variant="outline"
                     className="font-aj11 text-[16px] lg:text-[20px] py-3 flex-1 cursor-pointer border border-primary"
+                    asChild
                   >
-                    {card.cta2}
+                    {card.cta2Link?.startsWith("http") ? (
+                      <a
+                        href={card.cta2Link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {card.cta2}
+                      </a>
+                    ) : (
+                      <Link to={card.cta2Link || "/contact"}>{card.cta2}</Link>
+                    )}
                   </Button>
                 </div>
               </div>
