@@ -10,10 +10,12 @@ import { Clients } from "@/pages/Clients"
 import Contact from "@/pages/Contact"
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+    if (!hash) {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname, hash])
   return null
 }
 

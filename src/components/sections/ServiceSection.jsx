@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { Link } from "react-router-dom";
 import { content } from "@/data/content";
 import { fadeInUp, fadeInLeft, staggerContainer } from "@/utils/animations";
 
@@ -34,15 +35,16 @@ export function ServiceSection() {
             variants={staggerContainer}
           >
             {content.services.items.map((service) => (
-              <motion.div
-                key={service.id}
-                className="flex items-center justify-between py-4 cursor-pointer hover:text-primary transition-colors"
-                variants={fadeInUp}
-              >
-                <h3 className="text-[#5D5D5D] font-semibold text-lg lg:text-[20px] hover:text-black">
-                  {service.title}
-                </h3>
-                <ChevronDown className="h-5 w-5 text-muted-foreground shrink-0" />
+              <motion.div key={service.id} variants={fadeInUp}>
+                <Link
+                  to={`/services#${service.slug}`}
+                  className="flex items-center justify-between py-4 cursor-pointer hover:text-primary transition-colors group"
+                >
+                  <h3 className="text-[#5D5D5D] font-semibold text-lg lg:text-[20px] group-hover:text-black transition-colors">
+                    {service.title}
+                  </h3>
+                  <ChevronDown className="h-5 w-5 text-muted-foreground group-hover:text-black shrink-0 transition-transform group-hover:translate-x-0.5" />
+                </Link>
               </motion.div>
             ))}
           </motion.div>

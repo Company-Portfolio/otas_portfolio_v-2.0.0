@@ -28,13 +28,15 @@ export const content = {
     items: [
       {
         id: 1,
+        slug: "ai-agent",
         title: "AI Agents for Automation",
         description:
-          "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Website များ",
-        icon: "globe",
+          "လုပ်ငန်းတွေကို အလိုအလျောက် လုပ်ဆောင်ပေးနိုင်တဲ့ AI Agents များ",
+        icon: "bot",
       },
       {
         id: 2,
+        slug: "customize-software",
         title: "Customize Software for Business Problems",
         description:
           "လုပ်ငန်းရဲ့ အခက်အခဲတွေကို ဖြေရှင်းပေးနိုင်တဲ့ Customize Software များ",
@@ -42,6 +44,7 @@ export const content = {
       },
       {
         id: 3,
+        slug: "business-email",
         title: "Business Email for Brand Identity",
         description:
           "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေတဲ့ Business Email များ",
@@ -49,10 +52,11 @@ export const content = {
       },
       {
         id: 4,
-        title: "Business Email for Brand Identity",
+        slug: "business-website",
+        title: "Business Website for Brand Identity",
         description:
-          "လုပ်ငန်းတွေကို အလိုအလျောက် လုပ်ဆောင်ပေးနိုင်တဲ့ AI Agents များ",
-        icon: "bot",
+          "လုပ်ငန်းရဲ့ Brand Identity ကို ပိုခိုင်မာစေပြီး Customer တွေရဲ့ ယုံကြည်မှုတိုးစေတဲ့ Business Website များ",
+        icon: "globe",
       },
     ],
   },
@@ -409,6 +413,68 @@ export const content = {
 
   service: {
     banner: "/images/ServiceBannerSection.png",
+    details: [
+      {
+        id: 1,
+        slug: "business-website",
+        title: "Business Website",
+        subtitle: "လုပ်ငန်းကို ယုံကြည်မှုတိုးစေမဲ့",
+        description:
+          "လုပ်ငန်းရှင်တွေရဲ့ လုပ်ငန်းအတွက် Branding နှင့် Customer များ ၊ အလုပ်လက်တွဲလုပ်ဆောင်မည့် စီးပွားရေး လုပ်ငန်းများ၏ ယုံကြည်မှု ခိုင်မာစေဖို့အတွက် လုပ်ငန်းများအတွက် Business Portfolio ရရှိမှာ ဖြစ်ပါတယ်",
+        image: "/images/image.png",
+        benefits: [
+          "- ကိုယ်ပိုင် Domain နှင့် Hosting ဖြင့် လုပ်ငန်း၏ ယုံကြည်မှုကို တိုးတက်စေခြင်း",
+          "- သန့်ရှင်းသပ်ရပ်ပြီး Professional ကျသော Design များဖြင့် ဖန်တီးပေးခြင်း",
+          "- Google SEO အပြည့်အဝ ထည့်သွင်းပေးထားသဖြင့် ရှာဖွေရလွယ်ကူခြင်း",
+          "- Responsive Design ဖြစ်သဖြင့် မည်သည့် Device တွင်မဆို အဆင်ပြေစွာကြည့်ရှုနိုင်ခြင်း",
+        ],
+      },
+      {
+        id: 2,
+        slug: "business-email",
+        title: "Business Email",
+        subtitle: "လုပ်ငန်းရဲ့ ပုံရိပ်ကို မြှင့်တင်ပေးမဲ့",
+        description:
+          "လုပ်ငန်းရှင်တွေရဲ့ လုပ်ငန်းအတွက် B2B, B2G လုပ်ငန်းအမျိုးအစားများ ဆက်သွယ်ဆောင်ရွက်ရန်အတွက် အထူးသင့်လျော်ပြီး၊ လုပ်ငန်း၏ လုံခြုံစိတ်ချရမှုနှင့် ပရော်ဖက်ရှင်နယ်ကျမှုကို အပြည့်အဝ မြှင့်တင်ပေးမည့် Business Email ဖြစ်ပါတယ်",
+        image: "/images/image2.png",
+        benefits: [
+          "- ကိုယ်ပိုင်လုပ်ငန်းအမည်ဖြင့် အသုံးပြုနိုင်၍ B2B, B2G နှင့် Client များ၏ ယုံကြည်မှုကို ခိုင်မာစေခြင်း။",
+          "- ဝန်ထမ်းများ၏ အကောင့်များကို အပြည့်အဝ စီမံနိုင်ပြီး Data ဆုံးရှုံးမှု၊ မသမာမှုများကို ကာကွယ်ပေးနိုင်ခြင်း။",
+          "- Google SMS OTP ပြဿနာကို ကျော်လွှားနိုင်ပြီး အကောင့်ပြန်ရလွယ်ကူခြင်း။",
+          "- Built-in AI Assistant ပါဝင်သဖြင့် ရုံးသုံး Email များကို အချိန်တိုအတွင်း လွယ်ကူစွာ ရေးသားနိုင်ခြင်း။",
+        ],
+      },
+      {
+        id: 3,
+        slug: "ai-agent",
+        title: "AI Agent",
+        subtitle: "လုပ်ငန်းရဲ့ အချိန်ကို ၈ဆ မြှင့်တင်ပေးမဲ့",
+        description:
+          "လုပ်ငန်းရှင်တွေရဲ့ လုပ်ငန်းအတွက် Social Media ကနေ အရောင်းပိုင်း ၊ ပစ္စည်းအကြောင်းရှင်းပြခြင်းနှင့် Customer Service လုပ်ငန်းများကို အကောင်းဆုံးနဲ့ အမြန်ဆုံး (24/7) ဝန်ဆောင်မှုပေးနိုင်တဲ့ AI အရောင်းဝန်ထမ်း ရရှိမှာ ဖြစ်ပါတယ်",
+        image: "/images/image3.png",
+        benefits: [
+          "- လုပ်ငန်းလည်ပတ်မှုနှုန်းကို ၈ဆအထိ မြှင့်တင်ပေးပြီး အကောင်းဆုံး Customer Experience ကို ပေးစွမ်းနိုင်ခြင်း",
+          "- Facebook, TikTok နှင့် ကိုယ်ပိုင် App များတွင် တိုက်ရိုက်အသုံးပြုနိုင်သော AI Agent တစ်ယောက် ရရှိခြင်း",
+          "- Customer များအတွက် အမြန်ဆန်ဆုံးနှင့် စိတ်ကျေနပ်မှုအပြည့်အဝ ဝန်ဆောင်မှုကို အပြည့်အဝ ပေးနိုင်ခြင်း",
+          "- ပိတ်ရက်မရှိ (24/7) အော်ဒါကောက်ခြင်း၊ မေးခွန်းဖြေခြင်းနှင့် အခက်အခဲများကို ချက်ချင်းဖြေရှင်းပေးနိုင်ခြင်း",
+        ],
+      },
+      {
+        id: 4,
+        slug: "customize-software",
+        title: "Customize Software",
+        subtitle: "သင့်လုပ်ငန်းရဲ့ အခက်အခဲကို တစ်ချက်တည်းနဲ့ ဖြေရှင်းပေးမဲ့",
+        description:
+          "လုပ်ငန်းရှင်တွေရဲ့ ကြုံတွေ့နေရတဲ့ လုပ်ငန်းအခက်အခဲတွေကို အမှန်တကယ် ဖြေရှင်းပေးနိုင်သည့် Software သာ ဖြစ်သည်ဟူသော ယုံကြည်ချက်ဖြင့် လုပ်ငန်းသုံး Software များကို အစမှအဆုံး ရေးဆွဲဖန်တီးပေးသော ဝန်ဆောင်မှုဖြစ်ပါသည်။",
+        image: "/images/image4.png",
+        benefits: [
+          "- လုပ်ငန်းသုံး Software များကို မိမိလုပ်ငန်းလိုအပ်ချက်နှင့် ကိုက်ညီအောင် စိတ်ကြိုက် ရေးဆွဲနိုင်ခြင်း။",
+          "- ကြန့်ကြာနေသော Manual လုပ်ငန်းစဉ်များကို အလိုအလျောက်စနစ်ဖြင့် အစားထိုးကာ လုပ်ငန်းအချိန်နှင့်အရှိန်ကို မြှင့်တင်ပေးနိုင်ခြင်း။",
+          "- စနစ်ကျွမ်းကျင်စွာ အသုံးပြုနိုင်သည့်အထိ အနီးကပ် ပံ့ပိုးကူညီပေးမည့် သီးသန့် Technical Support Team ၏ ဝန်ဆောင်မှုကို ရရှိခြင်း။",
+          "- ပြောင်းလဲလာသော Сီးပွားရေး လိုအပ်ချက်များနှင့်အညီ Software ကို ရေရှည်အတွက် စဉ်ဆက်မပြတ် Updates ပြုလုပ်ပေးခြင်း။",
+        ],
+      },
+    ],
   },
 
 

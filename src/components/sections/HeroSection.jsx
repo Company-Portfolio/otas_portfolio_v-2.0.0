@@ -62,7 +62,7 @@ export function HeroSection() {
                     {content.hero.cta1}
                   </Link>
                 </Button>
-                <Button
+                {/* <Button
                   size="xl"
                   variant="outline"
                   className="px-8"
@@ -74,7 +74,7 @@ export function HeroSection() {
                   <span className="text-[16px] sm:text-[20px] lg:text-[24px] cursor-pointer">
                     {content.hero.cta2}
                   </span>
-                </Button>
+                </Button> */}
               </motion.div>
             </motion.div>
           </div>
