@@ -3,10 +3,44 @@ import { content } from "@/data/content"
 import Hero from "@/components/sections/Hero"
 import { motion } from "framer-motion";
 import { TestimonialSection } from "../components/sections/TestimonialSection";
+import { SEO } from "@/components/SEO";
 
 // 💡 ၁။ Framer Motion ကို Import ယူခြင်း
 
 export function About() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://otastechsolutions.com/about#webpage",
+    "url": "https://otastechsolutions.com/about",
+    "name": "About OTAS Tech Solutions | AI Automation & Custom Software in Myanmar",
+    "description": "OTAS Tech Solutions သည် ရန်ကုန်မြို့အခြေစိုက် နည်းပညာကုမ္ပဏီဖြစ်ပြီး မြန်မာလုပ်ငန်းရှင်များအတွက် AI Agent Automation၊ Custom Software နှင့် Business Website များကို ၅ နှစ်ကျော် လက်တွဲဆောင်ရွက်ပေးနေပါသည်။",
+    "isPartOf": {
+      "@id": "https://otastechsolutions.com/#website"
+    },
+    "about": {
+      "@id": "https://otastechsolutions.com/#organization"
+    },
+    "mainEntity": {
+      "@type": "ProfessionalService",
+      "@id": "https://otastechsolutions.com/#organization",
+      "name": "OTAS Tech Solutions",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No(503), Building (1), 7 Mile Condo, Parami Road",
+        "addressLocality": "Mayangone Township",
+        "addressRegion": "Yangon",
+        "addressCountry": "MM"
+      },
+      "knowsAbout": [
+        "AI Agent Automation",
+        "Custom Software Development",
+        "Business Website Development",
+        "Business Email Solutions",
+        "IT Consulting"
+      ]
+    }
+  };
 
   // 💡 ၂။ Animations အတွက် ရိုးရှင်းပြီး ထိရောက်မည့် Variants များ သတ်မှတ်ခြင်း
   const fadeInUp = {
@@ -28,6 +62,12 @@ export function About() {
 
   return (
     <main className="overflow-x-hidden">
+      <SEO
+        title="About Us"
+        description="OTAS Tech Solutions သည် ရန်ကုန်မြို့အခြေစိုက် နည်းပညာကုမ္ပဏီဖြစ်ပြီး မြန်မာလုပ်ငန်းရှင်များအတွက် AI Agent Automation၊ Custom Software နှင့် Business Website များကို ၅ နှစ်ကျော် လက်တွဲဆောင်ရွက်ပေးနေပါသည်။"
+        canonicalUrl="https://otastechsolutions.com/about"
+        schema={aboutSchema}
+      />
       {/* Hero Section */}
       <section className="w-full relative">
         <Hero images={content.about.hero.image} title={

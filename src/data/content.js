@@ -6,6 +6,7 @@ export const content = {
       { label: "ရနိုင်တဲ့ Service များ", href: "/services" },
       // { label: "ပ‌ရောဂျက်များ", href: "/projects" },
       { label: "လုပ်ငန်းများ", href: "/clients" },
+      // { label: "ဆောင်းပါးများ", href: "/blog" },
       // { label: "ဆက်သွယ်ဆွေးနွေးမယ်", href: "/contact" },
     ],
     cta: "အသေးစိတ် ဆွေးနွေးမယ်",
@@ -561,6 +562,7 @@ export const content = {
       { label: "ရနိုင်တဲ့ Service များ", href: "/services" },
       // { label: "ပ‌ရောဂျက်များ", href: "/projects" },
       { label: "လုပ်ငန်းရှင်များ", href: "/clients" },
+      { label: "ဆောင်းပါးများ", href: "/blog" },
     ],
     social: [
       { name: "Facebook", href: "https://www.facebook.com/otastechsolutions" },

@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom"
+import { Toaster } from "react-hot-toast"
 import { Navbar } from "@/components/layout/Navbar"
 import { Footer } from "@/components/layout/Footer"
 import { Home } from "@/pages/Home"
@@ -8,6 +9,8 @@ import { Services } from "@/pages/Services"
 import { Projects } from "@/pages/Projects"
 import { Clients } from "@/pages/Clients"
 import Contact from "@/pages/Contact"
+import { BlogList } from "@/pages/BlogList"
+import { BlogDetail } from "@/pages/BlogDetail"
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -22,6 +25,7 @@ function ScrollToTop() {
 function App() {
   return (
     <Router>
+      <Toaster position="bottom-right" reverseOrder={false} />
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />
@@ -32,6 +36,8 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/clients" element={<Clients />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:slug" element={<BlogDetail />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
