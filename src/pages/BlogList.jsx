@@ -448,6 +448,7 @@ export function BlogList() {
                       <img
                         src={blog.coverImage || "/images/HeroBanner.png"}
                         alt={blog.title}
+                        style={{ objectPosition: blog.coverImagePosition || '50% 50%' }}
                         onError={(e) => {
                           e.target.onerror = null;
                           e.target.src = "/images/HeroBanner.png";

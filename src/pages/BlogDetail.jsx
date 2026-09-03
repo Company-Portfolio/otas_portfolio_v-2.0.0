@@ -273,6 +273,7 @@ export function BlogDetail() {
             <img
               src={blog.coverImage}
               alt={blog.title}
+              style={{ objectPosition: blog.coverImagePosition || '50% 50%' }}
               onError={(e) => {
                 e.target.onerror = null;
                 e.target.src = "/images/HeroBanner.png";
